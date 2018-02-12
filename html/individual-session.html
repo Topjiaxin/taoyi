@@ -12,20 +12,34 @@
     <link rel="stylesheet" type="text/css" href="../css/base.css">
     <link rel="stylesheet" type="text/css" href="../css/jx.css">
     <script type="text/javascript" src="../js/jquery.js"></script>
+    <script type="text/javascript" src="../js/jx.js"></script>
     <style type="text/css">
+    	.godbag a{
+    		text-align:left;
+    	}
+    	.icon{
+    		padding:0 5px 0 26px;
+    	}
+    	.godbag{
+    		box-sizing:border-box;
+    		margin-right:12px;
+    	}
+    	.godbag:nth-child(3n){
+    		margin-right:0;
+    	}
     </style>
     <title>个人专场</title>
 </head>
 <body>
     <!-- 头部start -->
-    <header>
+    <!--<header>
         <div class="width macen title">
             <span class="fl">淘艺</span>
             <span class="fr mar40">
-                静雅轩<a href="login.html" class="fcred">[退出]</a>
+                静雅轩<a href="#" class="fcred">[退出]</a>
             </span>
         </div>
-    </header>
+    </header>-->
     <!-- 头部end -->
     <!-- 搜索 start -->
     <div class="width macen topsearch">
@@ -33,7 +47,7 @@
         <div class="search mat30">
             <ul class="flp fs14 fcred">
                 <li class="pa510 active">拍品</li>
-                <li class="pa510">易物商品</li>
+                <li class="pa510">易物</li>
                 <li class="pa510">专场</li>
                 <li class="pa510">作者</li>
                 <li class="pa510">活动</li>
@@ -44,9 +58,9 @@
         </div>
         <div class="play fr">
             <ul class="frp">
-                <li><a href="self.html" class="fcred">我的淘艺<span class="disib"></span></a></li>
+                <li><a href="#" class="fcred">静雅轩<span class="disib"></span></a></li>
                 <li><a href="inform.html" class="fcred">消息</a></li>
-                <li><a href="strcollet.html" class="fcred">收藏夹</a></li>
+                <li><a href="waitup.html" class="fcred">收藏夹</a></li>
                 <li><a href="javascript:publish()" class="fcred">发布</a></li>
             </ul>
         </div>
@@ -56,15 +70,15 @@
     <div class="main macen width pore">
         <!-- 导航条 start -->
         <nav class="nav">
-            <ul class="flp">
-                <li class="wai p_child bgred">
-                    <a href="#"><span>拍品</span>分类</a>
-                </li>
-                <li class="wai"><a href="index.html"><span id="span">首页</span></a></li>
-                <li class="wai"><a href="auction.html">拍卖</a></li>
-                <li class="wai"><a href="barter.html">易物</a></li>
-                <li class="wai"><a href="stretch.html">活动</a></li>
-                <li class="wai"><a href="download.html">APP下载</a></li>
+            <ul class="flp ovhid">
+                <!--<li class="wai">
+                    <a href="#"><span></span>商品分类</a>
+                </li>-->
+                <li class="wai"><a href="index.html">首页</a><i></i></li>
+                <li class="wai"><a href="auction.html">拍卖</a><i></i></li>
+                <li class="wai"><a href="barter.html">易物</a><i></i></li>
+                <li class="wai"><a href="stretch.html">活动</a><i></i></li>
+                <li class="wai bgred" style="float:right;"><a href="download.html">APP下载</a></li>
             </ul>
         </nav>
         <!-- 导航条 end -->
@@ -108,22 +122,22 @@
             </table>
         </div>
         <!-- 商品展示  start -->
-        <div class="width macen goods">
+        <div class="width macen goods mab30">
             <div class="good good2">
                 <div class="pstatus-b">
                     <a href="#"><span class="active0 fs16 pad5-20">个人专场</span></a>
                     <a href="#"><span class="fs16 mal5 pad5-20">易物商品</span></a>
-                    <div class="pagediv fr mat-5">
+                    <div class="pagediv fr mat-5 ovhid">
                         <span class="cur fcred">1</span><span class="pages">/12</span>   
                         <a href="#"><div class="prev"><</div></a>                     
-                        <a href="#"><div class="next">></div></a>
+                        <a href="#" class="fr"><div class="next">></div></a>
                     </div>
                 </div>
                 <div class="godbag0 ovhid">
                     <div class="goodft ovhid">
                         <div class="fl godbag">
-                            <a href="#"><img src="../img/daship1.png" class="w389-h197"></a>
-                            <div class="goodname"><a href="#">国工&nbsp;蒋升【容天】原矿&nbsp;全手工紫砂壶专场</a></div>
+                            <a href="aucinfo.html"><img src="../img/daship1.png" class="w389-h197"></a>
+                            <div class="goodname"><a href="aucinfo.html">国工&nbsp;蒋升【容天】原矿&nbsp;全手工紫砂壶专场</a></div>
                             <div class="collect textrig">
                                 <span class="fcred saled icon">20</span>件拍品
                                 <span class="fcred clled icon">123</span>人收藏
@@ -132,8 +146,8 @@
                             </div>
                         </div>
                         <div class="fl godbag">
-                            <a href="#"><img src="../img/jp2.jpg" class="w389-h197"></a>
-                            <div class="goodname"><a href="#">国工&nbsp;蒋升【容天】原矿&nbsp;全手工紫砂壶专场</a></div>
+                            <a href="aucinfo.html"><img src="../img/jp2.jpg" class="w389-h197"></a>
+                            <div class="goodname"><a href="aucinfo.html">国工&nbsp;蒋升【容天】原矿&nbsp;全手工紫砂壶专场</a></div>
                             <div class="collect textrig">
                                 <span class="fcred saled icon">20</span>件拍品
                                 <span class="fcred clled icon">123</span>人收藏
@@ -142,8 +156,8 @@
                             </div>
                         </div>
                         <div class="fl godbag">
-                            <a href="#"><img src="../img/jp3.jpg" class="w389-h197"></a>
-                            <div class="goodname"><a href="#">国工&nbsp;蒋升【容天】原矿&nbsp;全手工紫砂壶专场</a></div>
+                            <a href="aucinfo.html"><img src="../img/jp3.jpg" class="w389-h197"></a>
+                            <div class="goodname"><a href="aucinfo.html">国工&nbsp;蒋升【容天】原矿&nbsp;全手工紫砂壶专场</a></div>
                             <div class="collect textrig">
                                 <span class="fcred saled icon">20</span>件拍品
                                 <span class="fcred clled icon">123</span>人收藏
@@ -152,8 +166,8 @@
                             </div>
                         </div>
                         <div class="fl godbag">
-                            <a href="#"><img src="../img/jp1.jpg" class="w389-h197"></a>
-                            <div class="goodname"><a href="#">国工&nbsp;蒋升【容天】原矿&nbsp;全手工紫砂壶专场</a></div>
+                            <a href="aucinfo.html"><img src="../img/jp1.jpg" class="w389-h197"></a>
+                            <div class="goodname"><a href="aucinfo.html">国工&nbsp;蒋升【容天】原矿&nbsp;全手工紫砂壶专场</a></div>
                             <div class="collect textrig">
                                 <span class="fcred saled icon">20</span>件拍品
                                 <span class="fcred clled icon">123</span>人收藏
@@ -162,8 +176,8 @@
                             </div>
                         </div>
                         <div class="fl godbag">
-                            <a href="#"><img src="../img/jp2.jpg" class="w389-h197"></a>
-                            <div class="goodname"><a href="#">国工&nbsp;蒋升【容天】原矿&nbsp;全手工紫砂壶专场</a></div>
+                            <a href="aucinfo.html"><img src="../img/jp2.jpg" class="w389-h197"></a>
+                            <div class="goodname"><a href="aucinfo.html">国工&nbsp;蒋升【容天】原矿&nbsp;全手工紫砂壶专场</a></div>
                             <div class="collect textrig">
                                 <span class="fcred saled icon">20</span>件拍品
                                 <span class="fcred clled icon">123</span>人收藏
@@ -172,8 +186,8 @@
                             </div>
                         </div>
                         <div class="fl godbag">
-                            <a href="#"><img src="../img/jp3.jpg" class="w389-h197"></a>
-                            <div class="goodname"><a href="#">国工&nbsp;蒋升【容天】原矿&nbsp;全手工紫砂壶专场</a></div>
+                            <a href="aucinfo.html"><img src="../img/jp3.jpg" class="w389-h197"></a>
+                            <div class="goodname"><a href="aucinfo.html">国工&nbsp;蒋升【容天】原矿&nbsp;全手工紫砂壶专场</a></div>
                             <div class="collect textrig">
                                 <span class="fcred saled icon">20</span>件拍品
                                 <span class="fcred clled icon">123</span>人收藏
@@ -182,8 +196,8 @@
                             </div>
                         </div>
                         <div class="fl godbag">
-                            <a href="#"><img src="../img/jp1.jpg" class="w389-h197"></a>
-                            <div class="goodname"><a href="#">国工&nbsp;蒋升【容天】原矿&nbsp;全手工紫砂壶专场</a></div>
+                            <a href="aucinfo.html"><img src="../img/jp1.jpg" class="w389-h197"></a>
+                            <div class="goodname"><a href="aucinfo.html">国工&nbsp;蒋升【容天】原矿&nbsp;全手工紫砂壶专场</a></div>
                             <div class="collect textrig">
                                 <span class="fcred saled icon">20</span>件拍品
                                 <span class="fcred clled icon">123</span>人收藏
@@ -192,8 +206,8 @@
                             </div>
                         </div>
                         <div class="fl godbag">
-                            <a href="#"><img src="../img/jp2.jpg" class="w389-h197"></a>
-                            <div class="goodname"><a href="#">国工&nbsp;蒋升【容天】原矿&nbsp;全手工紫砂壶专场</a></div>
+                            <a href="aucinfo.html"><img src="../img/jp2.jpg" class="w389-h197"></a>
+                            <div class="goodname"><a href="aucinfo.html">国工&nbsp;蒋升【容天】原矿&nbsp;全手工紫砂壶专场</a></div>
                             <div class="collect textrig">
                                 <span class="fcred saled icon">20</span>件拍品
                                 <span class="fcred clled icon">123</span>人收藏
@@ -202,8 +216,8 @@
                             </div>
                         </div>
                         <div class="fl godbag">
-                            <a href="#"><img src="../img/jp3.jpg" class="w389-h197"></a>
-                            <div class="goodname"><a href="#">国工&nbsp;蒋升【容天】原矿&nbsp;全手工紫砂壶专场</a></div>
+                            <a href="aucinfo.html"><img src="../img/jp3.jpg" class="w389-h197"></a>
+                            <div class="goodname"><a href="aucinfo.html">国工&nbsp;蒋升【容天】原矿&nbsp;全手工紫砂壶专场</a></div>
                             <div class="collect textrig">
                                 <span class="fcred saled icon">20</span>件拍品
                                 <span class="fcred clled icon">123</span>人收藏
@@ -213,12 +227,12 @@
                         </div>                
                     </div>
                     <!-- 分页  start -->
-                    <div id="page" class="fr mat30"></div>
+                    <!--<div id="page" class="fr mat30"></div>-->
                     <!-- 分页  end -->
                 </div>
             </div>
             <!-- 分页  start -->
-            <div id="page" class="fr mat30"></div>
+            <!--<div id="page" class="fr mat30"></div>-->
             <!-- 分页  end -->
         </div>
         <!-- 商品展示  end -->
@@ -226,71 +240,75 @@
     <!-- 页面主体结束 -->
     <!-- footer start -->
     <footer>
-        <ul class="width macen flp out">
-            <li class="p_li">
-                <ul class="inner">
-                    <li><span class="h3">关于</span></li>
-                    <li><a href="#">关于淘艺</a></li>
-                    <li><a href="#">版权声明</a></li>
-                    <li><a href="#">关于隐私</a></li>
-                    <li><a href="#">免责声明</a></li>
-                    <li><a href="#">网站地图</a></li>
-                    <li><a href="#">诚聘英才</a></li>
-                </ul>
-            </li>
-            <li class="p_li">
-                <ul class="inner">
-                    <li><span class="h3">栏目</span></li>
-                    <li><a href="#">淘艺易购</a></li>
-                    <li><a href="#">淘艺拍卖</a></li>
-                    <li><a href="#">淘艺活动</a></li>
-                </ul>
-            </li>
-            <li class="p_li">
-                <ul class="inner">
-                    <li><span class="h3">帮助</span></li>
-                    <li><a href="#">淘艺规则</a></li>
-                    <li><a href="#">常见问题</a></li>
-                    <li><a href="#">帮助中心</a></li>
-                </ul>
-            </li>
-            <li class="p_li">
-                <ul class="inner">
-                    <li><span class="h3">联系</span></li>
-                    <li><a href="#">在线提问</a></li>
-                    <li><a href="#">联系我们</a></li>
-                    <li><a href="#">淘艺微博</a></li>
-                    <li><a href="#">淘艺微信</a></li>
-                </ul>
-            </li>
-            <li class="p_li">
-                <ul class="inner">
-                    <li><span class="h3">服务</span></li>
-                    <li><a href="#">推广服务</a></li>
-                    <li><a href="#">在线展览服务</a></li>
-                    <li><a href="#">艺术品定制服务</a></li>
-                </ul>
-            </li>
-            <li class="p_li">
-                <ul class="inner">
-                    <li><span class="h3">友情链接</span></li>
-                    <li><a href="#">搜藏网</a></li>
-                    <li><a href="#">有画网</a></li>
-                    <li><a href="#">壹号收藏</a></li>
-                    <li><a href="#">中华丹青网</a></li>
-                    <li><a href="#">博雅艺术院</a></li>
-                    <li><a href="#">中国楷书网</a></li>
-                    <li><a href="#" class="more">更多>></a></li>
-                </ul>
-            </li>
-            <li class="p_li">
-                <ul class="inner">
-                    <li><span class="h3">版权信息</span></li>
-                    <li class="copyright">淘艺会员所发布展示的“作品”“文章”版权归原作者所有，任何商业用途均须联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。Copyright 2010-2020宁波淘艺文化有限公司宁波十月Inc. 版权所有浙ICP备10206008号增值电信业务经营许可证浙B2-20100409</li>
-                </ul>
-            </li>
-        </ul>
-    </footer>
+		<ul class="width macen flp out">
+			<li class="p_li">
+				<ul class="inner">
+					<li><span class="h3">关于</span></li>
+					<li><a href="#">关于淘艺</a></li>
+					<li><a href="#">版权声明</a></li>
+					<li><a href="#">关于隐私</a></li>
+					<li><a href="#">免责声明</a></li>
+					<li><a href="#">网站地图</a></li>
+					<li><a href="#">诚聘英才</a></li>
+				</ul>
+			</li>
+			<li class="p_li">
+				<ul class="inner">
+					<li><span class="h3">栏目</span></li>
+					<li><a href="#">淘艺易购</a></li>
+					<li><a href="#">淘艺拍卖</a></li>
+					<li><a href="#">淘艺活动</a></li>
+				</ul>
+			</li>
+			<li class="p_li">
+				<ul class="inner">
+					<li><span class="h3">帮助</span></li>
+					<li><a href="#">淘艺规则</a></li>
+					<li><a href="#">常见问题</a></li>
+					<li><a href="#">帮助中心</a></li>
+				</ul>
+			</li>
+			<li class="p_li">
+				<ul class="inner">
+					<li><span class="h3">联系</span></li>
+					<li><a href="#">在线提问</a></li>
+					<li><a href="#">联系我们</a></li>
+					<li><a href="#">淘艺微博</a></li>
+					<li><a href="#">淘艺微信</a></li>
+				</ul>
+			</li>
+			<li class="p_li">
+				<ul class="inner">
+					<li><span class="h3">服务</span></li>
+					<li><a href="#">推广服务</a></li>
+					<li><a href="#">在线展览服务</a></li>
+					<li><a href="#">艺术品定制服务</a></li>
+				</ul>
+			</li>
+			<li class="p_li">
+				<ul class="inner">
+					<li><span class="h3">友情链接</span></li>
+					<li><a href="#">搜藏网</a></li>
+					<li><a href="#">有画网</a></li>
+					<li><a href="#">壹号收藏</a></li>
+					<li><a href="#">中华丹青网</a></li>
+					<li><a href="#">博雅艺术院</a></li>
+					<li><a href="#">中国楷书网</a></li>
+					<li><a href="#" class="more">更多>></a></li>
+				</ul>
+			</li>
+			<li class="p_li">
+				<ul class="inner">
+					<li><span class="h3">版权信息</span></li>
+					<li class="copyright">
+						<p>淘艺会员所发布展示的“作品”“文章”版权归原作者所有，任何商业用途均须联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。</p>
+						<p>Copyright 2010-2020宁波淘艺文化有限公司宁波十月Inc. 版权所有</p>
+						<p>浙ICP备10206008号增值电信业务经营许可证浙<br>B2-20100409</p>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</footer>
     <!-- footer end  -->
     <script type="text/javascript" src="../js/slide.js"></script>
     <script type="text/javascript" src="../js/layer/layer.js"></script>

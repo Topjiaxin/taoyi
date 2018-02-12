@@ -11,21 +11,70 @@
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
 	<link rel="stylesheet" type="text/css" href="../css/info.css">
+	<link rel="stylesheet" type="text/css" href="../css/jx.css">
 	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/jx.js"></script>
 	<style type="text/css">
+		.nav .flp .wai:last-child{
+			width:203px !important;
+		}
+		.woicon{
+			margin-top:11px;
+			height:18px;
+			line-height:18px;
+		}
+		.strbtn{
+			height:70px;
+			line-height:70px;
+		}
+		.strmego{
+			line-height:40px;
+			height:40px;
+			border-radius:0;
+		}
+		.strimg{
+			width:210px;
+			height:300px;
+		}
+		.strimg img{
+			width:210px;
+			height:300px;
+		}
+		.wostar{
+			line-height:40px;
+		}
+		.goodname, .collect{
+			line-height:40px;
+			height:40px;
+		}
+		.strpho{
+			margin-left:10px;
+			margin-top:0;
+		}
+		.strpho p{
+			line-height:40px;
+			height:40px;
+		}
+		.strpho5 .strpho:nth-child(5n+1){
+			margin-left:0;
+		}
+		.strpho img{
+			width:168px;
+			height:168px;
+		}
 	</style>
 	<title>活动详情</title>
 </head>
 <body>
 	<!-- 头部start -->
-	<header>
+	<!--<header>
 		<div class="width macen title">
 			<span class="fl">淘艺</span>
 			<span class="fr mar40">
-				静雅轩<a href="login.html" class="fcred">[退出]</a>
+				静雅轩<a href="#" class="fcred">[退出]</a>
 			</span>
 		</div>
-	</header>
+	</header>-->
 	<!-- 头部end -->
 	<!-- 搜索 start -->
 	<div class="width macen topsearch">
@@ -33,7 +82,7 @@
 		<div class="search mat30">
 			<ul class="flp fs14 fcred">
 				<li class="pa510 active">拍品</li>
-				<li class="pa510">易物商品</li>
+				<li class="pa510">易物</li>
 				<li class="pa510">专场</li>
 				<li class="pa510">作者</li>
 				<li class="pa510">活动</li>
@@ -44,9 +93,9 @@
 		</div>
 		<div class="play fr">
 			<ul class="frp">
-				<li><a href="self.html" class="fcred">我的淘艺<span class="disib"></span></a></li>
+				<li><a href="#" class="fcred">静雅轩<span class="disib"></span></a></li>
 				<li><a href="inform.html" class="fcred">消息</a></li>
-				<li><a href="strcollet.html" class="fcred">收藏夹</a></li>
+				<li><a href="waitup.html" class="fcred">收藏夹</a></li>
 				<li><a href="javascript:publish()" class="fcred">发布</a></li>
 			</ul>
 		</div>
@@ -57,13 +106,13 @@
 		<!-- 导航条 start -->
 		<nav class="nav">
 			<ul class="flp">
-				<li class="wai bgred">
-					<a href="#"><span>活动</span>分类</a>
+				<li class="wai p_child">
+					<a href="#"><span>艺术品分类</span></a>
 				</li>
-				<li class="wai"><a href="index.html"><span id="span">首页</span></a></li>
-				<li class="wai"><a href="auction.html">拍卖</a></li>
-				<li class="wai"><a href="barter.html">易物</a></li>
-				<li class="wai"><a href="stretch.html">活动</a></li>
+				<li class="wai bgyellow"><a href="index.html"><span id="span">首页</span></a><i style="visibility: hidden;"></i></li>
+				<li class="wai"><a href="auction.html">拍卖</a><i></i></li>
+				<li class="wai"><a href="barter.html">易物</a><i></i></li>
+				<li class="wai"><a href="stretch.html">活动</a><i></i></li>
 				<li class="wai"><a href="download.html">APP下载</a></li>
 			</ul>
 		</nav>
@@ -71,15 +120,16 @@
 		<!-- 面包屑导航  start -->
 		<div class="directories">当前目录<span><a href="index.html">首页</a></span><a href="stretch.html">>活动</a><span><a href="classifystr.html">>在线展览</a></span><span><a href="auction.html">>湖北天然绿松石念珠</a></span></div>
 		<!-- 面包屑导航  end -->
-		<div class="width ovhid mab30">
+		<div class="width ovhid">
 			<!-- 右边 窗口 start -->
-			<div class="wi235 fr boe31 h300 textcen">
-				<div class="codebag">
-					<div>扫一扫下载陶艺APP</div>
-					<div class="code macen">
-						<img src="../img/code.png">
-					</div>
+			<div class="wi235 fr boe31 pad0-10" style="height:323px;">
+				<div class="ovhid h40 lh40 borbd mal10 mar10">
+					<span class="fl fs16 fw">简介</span>
+					<a class="fr">全部<span class="c-ye fs14 mal1">></span></a>
 				</div>
+				<p class="textin2 fs14 fc7e textlef pad10 ovhid strinfo-dot" style="height:240px;line-height:18px;">
+					和田玉（Nephrite）是软玉的一种，俗称真玉，传统概念特指新疆和田地区出产的玉石，和田玉是国内高端具有领创品牌的软玉[1]，新国标泛指硬度在6.0至6.5之间玉石的名称[2]  。狭义上的讲的玉，一般指新疆和田玉[3]  。和田玉本身不是地域概念，并非特指新疆和田地区出产的玉，而是一类产品的名称。我国把透闪石成份占98%以上的石头都命名为和田玉，也称为软玉、透闪石、透闪石加软玉、透闪石加和田玉。狭义上讲的玉一般指新疆和田玉。狭义上讲的玉般指新疆和田玉。
+				</p>
 			</div>
 			<!-- 右边窗口end -->
 			<div class="wi880 boe31 pad10 pore">
@@ -92,140 +142,179 @@
 					</div>
 				</div>
 				<div class="disib wi655 fr">
-					<div class="goodid">
-						<h2 class="disib">湖北天然绿松石念珠</h2>
-						<p>拍品编号：<span>20154564595000</span></p>
-						<p>活动类型：<span>艺术交流</span></p>
-						<p>
-							店铺：
-							<span class="fcred">古玩爱好收藏者</span>
-							<span class="bgs fcfff woicon">实</span>
-							<span class="bgv fcfff woicon">V</span>
-							<span class="bgb fcfff woicon">保</span>
-							<span class="bgc fcfff woicon">诚</span>
-							<span class="wostar fs16">★</span>
-							<span class="wostar fs16">★</span>
-							<span class="wostar fs16">★</span>
-							<span class="wostar fs16">★</span>
-							<span class="wostar fs16">★</span>
-						</p>
+					<div class="borbd goodid pore aucinfo-enjoy ovhid">
+						<div class="fl">
+							<h2>湖北天然绿松石念珠</h2>
+							<div>
+								<span>分享</span>
+								<span>收藏</span>
+								<span>举报</span>
+							</div>
+						</div>
+						<div class="fr">
+							<p>编号：<span>20154564595000</span></p>
+							<p><span>123</span>围观</p>
+						</div>
+						<!--<img src="../img/colock.png" class="poab" onclick="setmsg()">-->
 					</div>
-					<div class="clum">
+					<p class="ovhid h40 lh40 borbd">
+						<span class="fs15 fl">古玩爱好收藏者</span>
+						<span class="bgs fcfff woicon mal20">实</span>
+						<span class="bgv fcfff woicon">V</span>
+						<span class="bgb fcfff woicon">保</span>
+						<span class="bgc fcfff woicon">诚</span>
+						<span class="wostar fs16 mal10">★</span>
+						<span class="wostar fs16">★</span>
+						<span class="wostar fs16">★</span>
+						<span class="wostar fs16">★</span>
+						<span class="wostar fs16">★</span>
+					</p>
+					<div class="h40 lh40 borbd fs15">活动类型：在线展厅</div>
+					<!--<div class="clum">
 						<span class="fcred collet icon"></span>收藏
 						<span class="fcred share icon"></span>分享
 						<span class="fcred jubao icon"></span>举报
 						<span class="fcred weiguan icon">123</span>围观
+					</div>-->
+					<div class="strbtn borbd">
+						<div class="strmego fs16">上传图片</div>
+						<div class="strmego fs16">发表文章</div>
 					</div>
-					<div class="poab strbtn">
-						<div class="strmego fs18">上传图片</div>
-						<div class="strmego fs18">发表文章</div>
+					<div class="ovhid lh40 h40">
+						<span class="fl fc7e">
+							<b>敬告：</b>
+							您发表文章上传图片的行为表明已认同淘艺平台的
+							<a class="fcred">活动规则</a>
+						</span>
+						<a class="fr fcred">VIP用户权限说明</a>
 					</div>
 				</div>
 			</div>
 			<!-- 活动详情  start -->
-			<div class="boe31 mat30 wi880 pad10 strfo">
-				<div class="label">
-					<span class="title">简介</span>
-				</div>
-				<div class="macen wi880 fs14 mat20">
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;和田玉（Nephrite）是软玉的一种，俗称真玉，传统概念特指新疆和田地区出产的玉石，和田玉是国内高端具有领创品牌的软玉[1]，新国标泛指硬度在6.0至6.5之间玉石的名称[2]  。狭义上的讲的玉，一般指新疆和田玉[3]  。和田玉本身不是地域概念，并非特指新疆和田地区出产的玉，而是一类产品的名称。我国把透闪石成份占98%以上的石头都命名为和田玉，也称为软玉、透闪石、透闪石加软玉、透闪石加和田玉。狭义上讲的玉，一般指新疆和田玉。
-				</div>
-			</div>
-			<div class="boe31 mat30 wi880 pad10 strfo">
-				<div class="label">
-					<span class="title">相册</span>
-					<a href="photos.html" class="posir">更多<i>></i></a>
-				</div>
-				<div class="macen wi880 ovhid mat30 strpho5">
-					<div class="fl disib strpho">
-						<a href="lookphoto.html"><img src="../img/rp3.jpg"></a>
-						<p>金丝玉珍品收藏</p>
+			<div class="ovhid  mat30">
+				<div class="boe31 wi880 pad10 strfo fl">
+					<div class="ovhid h40 lh40 mal20 mar20">
+						<span class="fl fs16 fw">图片：</span>
+						<a class="fr">更多<span class="c-ye fs14 mal1">></span></a>
 					</div>
-					<div class="fl disib strpho">
-						<a href="lookphoto.html"><img src="../img/rp3.jpg"></a>
-						<p>金丝玉珍品收藏</p>
-					</div>
-					<div class="fl disib strpho">
-						<a href="lookphoto.html"><img src="../img/rp3.jpg"></a>
-						<p>金丝玉珍品收藏</p>
-					</div>
-					<div class="fl disib strpho">
-						<a href="lookphoto.html"><img src="../img/rp3.jpg"></a>
-						<p>金丝玉珍品收藏</p>
-					</div>
-					<div class="fl disib strpho">
-						<a href="lookphoto.html"><img src="../img/rp3.jpg"></a>
-						<p>金丝玉珍品收藏</p>
-					</div>
-					<div class="fl disib strpho">
-						<a href="lookphoto.html"><img src="../img/rp3.jpg"></a>
-						<p>金丝玉珍品收藏</p>
-					</div>
-					<div class="fl disib strpho">
-						<a href="lookphoto.html"><img src="../img/rp3.jpg"></a>
-						<p>金丝玉珍品收藏</p>
-					</div>
-					<div class="fl disib strpho">
-						<a href="lookphoto.html"><img src="../img/rp3.jpg"></a>
-						<p>金丝玉珍品收藏</p>
-					</div>
-					<div class="fl disib strpho">
-						<a href="lookphoto.html"><img src="../img/rp3.jpg"></a>
-						<p>金丝玉珍品收藏</p>
-					</div>
-					<div class="fl disib strpho">
-						<a href="lookphoto.html"><img src="../img/rp3.jpg"></a>
-						<p>金丝玉珍品收藏</p>
-					</div>
-				</div>
-			</div>
-			<div class="boe31 mat30 wi880 pad10 strfo">
-				<div class="label">
-					<span class="title">文章</span>
-					<a href="atical.html" class="posir">更多<i>></i></a>
-				</div>
-				<div class="macen wi880">
-					<div class="bobe31 ovhid atical">
-						<a href="atiinfo.html"><img src="../img/rp2.jpg" class="mab30"></a>
-						<div class="atibag fr">
-							<h2>湖北天然绿松石念珠</h2>
-							<p>来源：<span>古玩爱好收藏者</span></p>
-							<p>时间：<span>2015-12-05</span></p>
-							<p class="aticon">和田玉（Nephrite）是软玉的一种，俗称真玉，传统概念特指新疆和田地区出产的玉石，和田玉是国内高端具有领创品牌的软玉[1]  ，新国标泛指硬度在6.0至6.5之间玉石的名称[2]  。和田玉本身不是地域概念....<span class="fcred"><a href="#">查看原文>></a></span></p>
+					<div class="macen wi880 ovhid strpho5 mat10">
+						<div class="fl disib strpho">
+							<img src="../img/rp3.jpg">
+							<p>金丝玉珍品收藏</p>
+						</div>
+						<div class="fl disib strpho">
+							<img src="../img/rp3.jpg">
+							<p>金丝玉珍品收藏</p>
+						</div>
+						<div class="fl disib strpho">
+							<img src="../img/rp3.jpg">
+							<p>金丝玉珍品收藏</p>
+						</div>
+						<div class="fl disib strpho">
+							<img src="../img/rp3.jpg">
+							<p>金丝玉珍品收藏</p>
+						</div>
+						<div class="fl disib strpho">
+							<img src="../img/rp3.jpg">
+							<p>金丝玉珍品收藏</p>
+						</div>
+						<div class="fl disib strpho">
+							<img src="../img/rp3.jpg">
+							<p>金丝玉珍品收藏</p>
+						</div>
+						<div class="fl disib strpho">
+							<img src="../img/rp3.jpg">
+							<p>金丝玉珍品收藏</p>
+						</div>
+						<div class="fl disib strpho">
+							<img src="../img/rp3.jpg">
+							<p>金丝玉珍品收藏</p>
+						</div>
+						<div class="fl disib strpho">
+							<img src="../img/rp3.jpg">
+							<p>金丝玉珍品收藏</p>
+						</div>
+						<div class="fl disib strpho">
+							<img src="../img/rp3.jpg">
+							<p>金丝玉珍品收藏</p>
 						</div>
 					</div>
-					<div class="bobe31 ovhid atical">
-						<a href="atiinfo.html"><img src="../img/rp2.jpg" class="mab30"></a>
-						<div class="atibag fr">
-							<h2>湖北天然绿松石念珠</h2>
-							<p>来源：<span>古玩爱好收藏者</span></p>
-							<p>时间：<span>2015-12-05</span></p>
-							<p class="aticon">和田玉（Nephrite）是软玉的一种，俗称真玉，传统概念特指新疆和田地区出产的玉石，和田玉是国内高端具有领创品牌的软玉[1]  ，新国标泛指硬度在6.0至6.5之间玉石的名称[2]  。和田玉本身不是地域概念....<span class="fcred"><a href="#">查看原文>></a></span></p>
-						</div>
+				</div>
+				<div class="fr wi235 boe31 pad0-10">
+					<div class="ovhid h40 lh40 borbd mal10 mar10">
+						<span class="fl fs16 fw">文章</span>
+						<a class="fr">更多<span class="c-ye fs14 mal1">></span></a>
 					</div>
-					<div class="bobe31 ovhid atical">
-						<a href="atiinfo.html"><img src="../img/rp2.jpg" class="mab30"></a>
-						<div class="atibag fr">
-							<h2>湖北天然绿松石念珠</h2>
-							<p>来源：<span>古玩爱好收藏者</span></p>
-							<p>时间：<span>2015-12-05</span></p>
-							<p class="aticon">和田玉（Nephrite）是软玉的一种，俗称真玉，传统概念特指新疆和田地区出产的玉石，和田玉是国内高端具有领创品牌的软玉[1]  ，新国标泛指硬度在6.0至6.5之间玉石的名称[2]  。和田玉本身不是地域概念....<span class="fcred"><a href="#">查看原文>></a></span></p>
+					<div class="pad0-10 mab40">
+						<div class="strinfo-artical-item">
+							<div class="flex flex-r pad10-0">
+								<img src="../img/rp2.jpg"/>
+								<span class="flex-1 mal10 fs13">文章文章文章文章文章文章文章文章文章文章文章</span>
+							</div>
+							<p class="fc7e fs13 mab10">2016<span class="mal5 mar5">/</span>06<span class="mal5 mar5">/</span>05</p>
+							<p class="collect textlef ma0 borbd">
+								<a href="butishop.html">琚瑶阁</a>
+								<span class="iconn icon1-jx"></span>
+								<span class="iconn icon2-jx"></span>
+								<span class="iconn icon3-jx"></span>
+								<span class="iconn icon4-jx"></span>
+								<span class="textcen fl ovhid">
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+								</span>
+							</p>
 						</div>
-					</div>
-					<div class="ovhid atical">
-						<a href="atiinfo.html"><img src="../img/rp2.jpg" class="mab30"></a>
-						<div class="atibag fr">
-							<h2>湖北天然绿松石念珠</h2>
-							<p>来源：<span>古玩爱好收藏者</span></p>
-							<p>时间：<span>2015-12-05</span></p>
-							<p class="aticon">和田玉（Nephrite）是软玉的一种，俗称真玉，传统概念特指新疆和田地区出产的玉石，和田玉是国内高端具有领创品牌的软玉[1]  ，新国标泛指硬度在6.0至6.5之间玉石的名称[2]  。和田玉本身不是地域概念....<span class="fcred"><a href="#">查看原文>></a></span></p>
+						<div class="strinfo-artical-item">
+							<div class="flex flex-r pad10-0">
+								<img src="../img/rp2.jpg"/>
+								<span class="flex-1 mal10 fs13">文章文章文章文章文章文章文章文章文章文章文章</span>
+							</div>
+							<p class="fc7e fs13 mab10">2016<span class="mal5 mar5">/</span>06<span class="mal5 mar5">/</span>05</p>
+							<p class="collect textlef ma0 borbd">
+								<a href="butishop.html">琚瑶阁</a>
+								<span class="iconn icon1-jx"></span>
+								<span class="iconn icon2-jx"></span>
+								<span class="iconn icon3-jx"></span>
+								<span class="iconn icon4-jx"></span>
+								<span class="textcen fl ovhid">
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+								</span>
+							</p>
+						</div>
+						<div class="strinfo-artical-item">
+							<div class="flex flex-r pad10-0">
+								<img src="../img/rp2.jpg"/>
+								<span class="flex-1 mal10 fs13">文章文章文章文章文章文章文章文章文章文章文章</span>
+							</div>
+							<p class="fc7e fs13 mab10">2016<span class="mal5 mar5">/</span>06<span class="mal5 mar5">/</span>05</p>
+							<p class="collect textlef ma0 borbd">
+								<a href="utishop.html">琚瑶阁</a>
+								<span class="iconn icon1-jx"></span>
+								<span class="iconn icon2-jx"></span>
+								<span class="iconn icon3-jx"></span>
+								<span class="iconn icon4-jx"></span>
+								<span class="textcen fl ovhid">
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+								</span>
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<!-- 活动详情  end -->
 		</div>
-		<a href="#"><img src="../img/jpb.jpg" class="ma50-0 wi900"></a>
+		<a href="aucinfo.html" class="disib"><img src="../img/jpb.jpg" class="ma30-0"></a>
 	</div>
 	<!-- 页面主体结束 -->
 	<!-- footer start -->
@@ -290,7 +379,11 @@
 			<li class="p_li">
 				<ul class="inner">
 					<li><span class="h3">版权信息</span></li>
-					<li class="copyright">淘艺会员所发布展示的“作品”“文章”版权归原作者所有，任何商业用途均须联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。Copyright 2010-2020宁波淘艺文化有限公司宁波十月Inc. 版权所有浙ICP备10206008号增值电信业务经营许可证浙B2-20100409</li>
+					<li class="copyright">
+						<p>淘艺会员所发布展示的“作品”“文章”版权归原作者所有，任何商业用途均须联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。</p>
+						<p>Copyright 2010-2020宁波淘艺文化有限公司宁波十月Inc. 版权所有</p>
+						<p>浙ICP备10206008号增值电信业务经营许可证浙<br>B2-20100409</p>
+					</li>
 				</ul>
 			</li>
 		</ul>

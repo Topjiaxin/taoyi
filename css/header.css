@@ -1,15 +1,21 @@
 @charset "utf-8";
 .logo{
-	background: url('../img/logo.png') no-repeat;
-	width: 230px;
-	height: 55px;
+	background: url('../img/logo1.png') no-repeat;
+	background-size:100% 100%;
+	width: 420px;
+	height: 90px;
 }
 .search{
+	float:left;
 	height: 55px;
-	width: 855px;
+	width: 400px;
+	margin-top:10px;
+}
+.search ul{
+	overflow:hidden;
 }
 .search ul li{
-	margin-right: 20px;
+	margin-right: 7px;
 	cursor: pointer;
 }
 .active{
@@ -17,12 +23,18 @@
 	color: #fff;
 }
 .text_search{
-	width: 490px;
+	width: 250px;
 	height: 30px;
 	padding-left: 10px;
 }
 .topsearch{
 	height: 115px;
+	margin:30px auto 0;
+}
+.topsearch a{
+	margin-right:85px;
+	display:inline-block;
+	float:left;
 }
 .do_search{
 	height: 34px;
@@ -30,12 +42,21 @@
 }
 .play{
 	height: 55px;
-	margin-top: -17px;
+	margin-top: 50px;
+}
+.play ul{
+	overflow:hidden;
+}
+.frp a{
+	float:none;
+	margin:0;
 }
 .play ul li{
-	margin-left:10px;
+	height:12px;
+	line-height:12px;
+	margin-left:12px;
 	border-right:1px solid #b8243b;
-	padding-right: 10px;
+	padding-right: 12px;
 }
 .play ul li:first-child{
 	border-right: none;
@@ -51,7 +72,7 @@ footer .out{
 	margin-top: 15px;
 }
 .out .p_li{
-	margin-right: 45px;
+	margin-right: 65px;
 }
 .out .p_li:last-child{
 	float: right;
@@ -60,9 +81,12 @@ footer .out{
 .inner li{
 	clear: left !important;
 }
-.inner li{
-	color: #949494;
+.inner li:nth-child(1){
 	font-size: 16px;
+}
+.inner li{
+	color: #949494;	
+	font-size: 14px;
 	margin-top: 10px;
 }
 .inner li .more{

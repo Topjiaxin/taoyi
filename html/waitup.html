@@ -11,7 +11,9 @@
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
 	<link rel="stylesheet" type="text/css" href="../css/self.css">
+	<link rel="stylesheet" type="text/css" href="../css/jx.css">
 	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/jx.js"></script>
 	<style type="text/css">
 		
 	</style>
@@ -19,22 +21,21 @@
 </head>
 <body>
 	<!-- 头部start -->
-	<header>
+	<!--<header>
 		<div class="width macen title">
 			<span class="fl">淘艺</span>
 			<span class="fr mar40">
-				静雅轩<a href="login.html" class="fcred">[退出]</a>
+				静雅轩<a href="#" class="fcred">[退出]</a>
 			</span>
 		</div>
-	</header>
-	<!-- 头部end -->
-	<!-- 搜索 start -->
+	</header>-->
+	<!-- 头部end --><!-- 搜索 start -->
 	<div class="width macen topsearch">
 		<a href="index.html"><div class="logo fl"></div></a>
 		<div class="search mat30">
 			<ul class="flp fs14 fcred">
 				<li class="pa510 active">拍品</li>
-				<li class="pa510">易物商品</li>
+				<li class="pa510">易物</li>
 				<li class="pa510">专场</li>
 				<li class="pa510">作者</li>
 				<li class="pa510">活动</li>
@@ -45,9 +46,9 @@
 		</div>
 		<div class="play fr">
 			<ul class="frp">
-				<li><a href="self.html" class="fcred">我的淘艺<span class="disib"></span></a></li>
+				<li><a href="#" class="fcred">静雅轩<span class="disib"></span></a></li>
 				<li><a href="inform.html" class="fcred">消息</a></li>
-				<li><a href="strcollet.html" class="fcred">收藏夹</a></li>
+				<li><a href="waitup.html" class="fcred">收藏夹</a></li>
 				<li><a href="javascript:publish()" class="fcred">发布</a></li>
 			</ul>
 		</div>
@@ -58,35 +59,47 @@
 	<div class="main macen width">
 		<!-- 导航条 start -->
 		<nav class="nav">
-			<ul class="flp">
-				<li class="wai">
-					<a href="#"><span></span>商品分类</a>
-				</li>
-				<li class="wai"><a href="index.html">首页</a></li>
-				<li class="wai"><a href="auction.html">拍卖</a></li>
-				<li class="wai"><a href="barter.html">易物</a></li>
-				<li class="wai"><a href="stretch.html">活动</a></li>
-				<li class="wai bgred"><a href="download.html">APP下载</a></li>
-			</ul>
-		</nav>
+            <ul class="flp ovhid">
+                <!--<li class="wai">
+                    <a href="#"><span></span>商品分类</a>
+                </li>-->
+                <li class="wai"><a href="index.html">首页</a><i></i></li>
+                <li class="wai"><a href="auction.html">拍卖</a><i></i></li>
+                <li class="wai"><a href="barter.html">易物</a><i></i></li>
+                <li class="wai"><a href="stretch.html">活动</a><i></i></li>
+                <li class="wai bgred" style="float:right;"><a href="download.html">APP下载</a></li>
+            </ul>
+        </nav>
 		<div class="boe31 manager ovhid">
-			<div class="wi970 fr bole31">
+			<div class="wi970 fr bole31 padb100 box-bor">
 				<div class="self_label">
-					<a href="#" class="updbtn disib textcen fr mar40">+新建商品</a>
+					<a href="#" class="disib textcen fr mar40 pad5-20 mat-5" style="background:#c12736;color:#fff;">+新建商品</a>
 					<p class="self_title"><a href="#">商品管理</a><a href="#">>待上传商品</a></p>
 				</div>
 				<div class="bobe31 mat10 waitlabel pore">
 					<div class="fr">
-						<a href="javascript:opencheck()" class="updbtn disib textcen mar10 mab10">批量上传到官方网站</a>
-						<a href="javascript:opencheck()" class="updbtn disib textcen mar10 mab10">批量上传到个人专场</a>
+						<a href="javascript:opencheck()" class="updbtn disib textcen mar10 mab10">批量上传</a>
 					</div>
-					<p class="fs14 poab"><a href="#" class="disib pad0-20 active mar10">拍卖</a><a href="#" class="disib pad0-20">易物</a></p>
+					<p class="fs14 poab">
+						<a href="#" class="disib pad0-20 active mar10">拍卖</a>
+						<a href="#" class="disib pad0-20">易物</a>
+					</p>
+					<p class="waitup-filter poab">
+						<span>艺术品类别筛选</span>
+						<select id="ee">
+							<option value="1">类别选项1</option>
+							<option value="2">类别选项2</option>
+							<option value="3">类别选项3</option>
+						</select>
+					</p>
 				</div>
 				<div class="pad20">
 					<div class="bgcc pad10-20 mat10 goodres">
 						<img src="../img/goodbag.png">
 						<h3 class="disib">唐三彩马匹</h3><a href="#">拍卖待上传</a>
 						<p class="fr">
+							<a href="#" class="updbtn disib textcen mar10">批量上传到官方专场</a>
+							<a href="#" class="updbtn disib textcen mar10">批量上传到个人专场</a>
 							<a href="#" class="updbtn disib textcen mar10">清楚设置</a>
 							<a href="#" class="updbtn disib textcen mar10">修改设置</a>
 						</p>
@@ -95,6 +108,8 @@
 						<img src="../img/goodbag.png">
 						<h3 class="disib">唐三彩马匹</h3><a href="#">拍卖待上传</a>
 						<p class="fr">
+							<a href="#" class="updbtn disib textcen mar10">批量上传到官方专场</a>
+							<a href="#" class="updbtn disib textcen mar10">批量上传到个人专场</a>
 							<a href="#" class="updbtn disib textcen mar10">清楚设置</a>
 							<a href="#" class="updbtn disib textcen mar10">修改设置</a>
 						</p>
@@ -103,6 +118,8 @@
 						<img src="../img/goodbag.png">
 						<h3 class="disib">唐三彩马匹</h3><a href="#">拍卖待上传</a>
 						<p class="fr">
+							<a href="#" class="updbtn disib textcen mar10">批量上传到官方专场</a>
+							<a href="#" class="updbtn disib textcen mar10">批量上传到个人专场</a>
 							<a href="#" class="updbtn disib textcen mar10">清楚设置</a>
 							<a href="#" class="updbtn disib textcen mar10">修改设置</a>
 						</p>
@@ -111,6 +128,8 @@
 						<img src="../img/goodbag.png">
 						<h3 class="disib">唐三彩马匹</h3><a href="#">拍卖待上传</a>
 						<p class="fr">
+							<a href="#" class="updbtn disib textcen mar10">批量上传到官方专场</a>
+							<a href="#" class="updbtn disib textcen mar10">批量上传到个人专场</a>
 							<a href="#" class="updbtn disib textcen mar10">清楚设置</a>
 							<a href="#" class="updbtn disib textcen mar10">修改设置</a>
 						</p>
@@ -119,6 +138,8 @@
 						<img src="../img/goodbag.png">
 						<h3 class="disib">唐三彩马匹</h3><a href="#">拍卖待上传</a>
 						<p class="fr">
+							<a href="#" class="updbtn disib textcen mar10">批量上传到官方专场</a>
+							<a href="#" class="updbtn disib textcen mar10">批量上传到个人专场</a>
 							<a href="#" class="updbtn disib textcen mar10">清楚设置</a>
 							<a href="#" class="updbtn disib textcen mar10">修改设置</a>
 						</p>
@@ -127,13 +148,15 @@
 						<img src="../img/goodbag.png">
 						<h3 class="disib">唐三彩马匹</h3><a href="#">拍卖待上传</a>
 						<p class="fr">
+							<a href="#" class="updbtn disib textcen mar10">批量上传到官方专场</a>
+							<a href="#" class="updbtn disib textcen mar10">批量上传到个人专场</a>
 							<a href="#" class="updbtn disib textcen mar10">清楚设置</a>
 							<a href="#" class="updbtn disib textcen mar10">修改设置</a>
 						</p>
 					</div>
 				</div>
 				<!-- 分页  start -->
-				<div id="page" class="fr mat30 mar40"></div>
+				<!--<div id="page" class="fr mat30 mar40"></div>-->
 				<button class="mat20 updbtn mab30 mar100 fr disn">确定上传</button>
 				<!-- 分页  end -->
 			</div>
@@ -150,22 +173,22 @@
 							<a href="billlist.html"><li class="padl70 ma10-0">账单查询</li></a>
 						</ul>
 					</li>
-					<li class="bobe31 pore padl70" for="sgb"><div class="sicon sgb poab"></div>商品管理<span class="fs16 rotate">></span></li>
-					<li class="bobe31 disn" name="sgb">
+					<li class="bobe31 pore padl70 navactive" for="sgb"><div class="sicon sgb poab"></div>商品管理<span class="fs16 rotate">></span></li>
+					<li class="bobe31" name="sgb">
 						<ul class="childnav">
-							<a href="goodbag.html"><li class="padl70 ma10-0 cnavactive">商品资料库</li></a>
-							<a href="waitup.html"><li class="padl70 ma10-0">待上传商品</li></a>
-							<a href="loadgf.html"><li class="padl70 ma10-0">已上传商品</li></a>
-							<a href="pushgood.html"><li class="padl70 ma10-0">模板</li></a>
+							<a href="goodbag1.html"><li class="padl70 ma10-0">商品资料库</li></a>
+							<a href="waitup.html"><li class="padl70 ma10-0 cnavactive">待上传商品</li></a>
+							<a href="trueup.html"><li class="padl70 ma10-0">已上传商品</li></a>
+							<a href="mblist.html"><li class="padl70 ma10-0">模板</li></a>
 						</ul>
 					</li>
 					<li class="bobe31 pore padl70" for="ywb"><div class="sicon ywb poab"></div>易物管理<span class="fs16 rotate">></span></li>
 					<li class="bobe31 disn" name="ywb">
 						<ul class="childnav">
-							<a href="barmana.html"><li class="padl70 ma10-0 cnavactive">易物商品管理</li></a>
+							<a href="mblist2.html"><li class="padl70 ma10-0 cnavactive">易物商品管理</li></a>
 							<a href="barreq.html"><li class="padl70 ma10-0">易物申请管理</li></a>
 							<a href="ordermana.html"><li class="padl70 ma10-0">易物订单管理</li></a>
-							<a href="takelist.html"><li class="padl70 ma10-0">易物评价管理</li></a>
+							<a href="takeorder.html"><li class="padl70 ma10-0">易物评价管理</li></a>
 						</ul>
 					</li>
 					<li class="bobe31 pore padl70" for="pgb"><div class="sicon pgb poab"></div>拍卖管理<span class="fs16 rotate">></span></li>
@@ -181,18 +204,17 @@
 					<li class="bobe31 pore padl70" for="hgb"><div class="sicon hgb poab"></div>活动管理<span class="fs16 rotate">></span></li>
 					<li class="bobe31 disn" name="hgb">
 						<ul class="childnav">
-							<a href="lvstr.html"><li class="padl70 ma10-0 cnavactive">发布新活动</li></a>
-							<a href="updstr.html"><li class="padl70 ma10-0">已发布的活动管理</li></a>
+							<a href="updstr.html"><li class="padl70 ma10-0 cnavactive">已发布的活动管理</li></a>
 							<a href="photomana.html"><li class="padl70 ma10-0">我上传的活动图片</li></a>
 							<a href="articlemg.html"><li class="padl70 ma10-0">我提交的活动文章</li></a>
 						</ul>
 					</li>
-					<li class="bobe31 pore padl70"><div class="sicon msgb poab"></div><a href="inform.html">消息管理</a></li>
+					<li class="bobe31 pore padl70"><div class="sicon msgb poab"></div><a href="#">消息管理</a></li>
 					<li class="bobe31 pore padl70" for="infob"><div class="sicon infob poab"></div>个人资料管理<span class="fs16 rotate">></span></li>
 					<li class="bobe31 disn" name="infob">
 						<ul class="childnav">
 							<a href="per-profile.html"><li class="padl70 ma10-0 cnavactive">完善个人资料</li></a>
-							<a href="AM.html"><li class="padl70 ma10-0">认证管理</li></a>
+							<a href="AMp-box.html"><li class="padl70 ma10-0">认证管理</li></a>
 							<a href="addressp-box.html"><li class="padl70 ma10-0">收货地址</li></a>
 							<a href="Authority-query.html"><li class="padl70 ma10-0">权限查询</li></a>
 							<a href="individual-session.html"><li class="padl70 ma10-0">个人页面预览</li></a>
@@ -201,32 +223,32 @@
 					<li class="bobe31 pore padl70" for="zfb"><div class="sicon zfb poab"></div>增值服务<span class="fs16 rotate">></span></li>
 					<li class="bobe31 disn" name="zfb">
 						<ul class="childnav">
-							<a href="#"><li class="padl70 ma10-0 cnavactive">VIP会员</li></a>
-							<a href="#"><li class="padl70 ma10-0">商户合作</li></a>
+							<a href="vas.html"><li class="padl70 ma10-0 cnavactive">VIP会员</li></a>
+							<a href="business-cooperation.html"><li class="padl70 ma10-0">商户合作</li></a>
 						</ul>
 					</li>
 					<li class="bobe31 pore padl70" for="scjb"><div class="sicon scjb poab"></div>收藏夹&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs16 rotate">></span></li>
 					<li class="bobe31 disn" name="scjb">
 						<ul class="childnav">
-							<a href="todayauc.html"><li class="padl70 ma10-0 cnavactive">拍卖专场</li></a>
-							<a href="butishop.html"><li class="padl70 ma10-0">店铺</li></a>
+							<a href="waitup1.html"><li class="padl70 ma10-0 cnavactive">拍卖专场</li></a>
+							<a href="waitup2.html"><li class="padl70 ma10-0">店铺</li></a>
 							<a href="auccollet.html"><li class="padl70 ma10-0">拍品</li></a>
-							<a href="barcollet.html"><li class="padl70 ma10-0">易物商品</li></a>
+							<a href="pushgood.html"><li class="padl70 ma10-0">易物商品</li></a>
 							<a href="strcollet.html"><li class="padl70 ma10-0">活动</li></a>
 						</ul>
 					</li>
-					<li class="bobe31 pore padl70 navactive" for="setb"><div class="sicon setb poab"></div>设置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs16 rotate">></span></li>
-					<li class="bobe31" name="setb">
+					<li class="bobe31 pore padl70" for="setb"><div class="sicon setb poab"></div>设置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs16 rotate">></span></li>
+					<li class="bobe31 disn" name="setb">
 						<ul class="childnav">
-							<a href="safe.html"><li class="padl70 ma10-0">账户安全</li></a>
+							<a href="mana.html"><li class="padl70 ma10-0 cnavactive">账户安全</li></a>
 							<a href="bindthird.html"><li class="padl70 ma10-0">绑定第三方账号</li></a>
-							<a href="about.html"><li class="padl70 ma10-0 cnavactive">关于淘艺</li></a>
+							<a href="about.html"><li class="padl70 ma10-0">关于淘艺</li></a>
 							<a href="help.html"><li class="padl70 ma10-0">帮助中心</li></a>
 						</ul>
 					</li>
 				</ul>
 			</div>
-			<!-- 左侧工具条  end -->
+			<!-- 左侧工具条end -->
 		</div>
 	</div>
 	<!-- footer start -->
@@ -291,7 +313,11 @@
 			<li class="p_li">
 				<ul class="inner">
 					<li><span class="h3">版权信息</span></li>
-					<li class="copyright">淘艺会员所发布展示的“作品”“文章”版权归原作者所有，任何商业用途均须联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。Copyright 2010-2020宁波淘艺文化有限公司宁波十月Inc. 版权所有浙ICP备10206008号增值电信业务经营许可证浙B2-20100409</li>
+					<li class="copyright">
+						<p>淘艺会员所发布展示的“作品”“文章”版权归原作者所有，任何商业用途均须联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。</p>
+						<p>Copyright 2010-2020宁波淘艺文化有限公司宁波十月Inc. 版权所有</p>
+						<p>浙ICP备10206008号增值电信业务经营许可证浙<br>B2-20100409</p>
+					</li>
 				</ul>
 			</li>
 		</ul>

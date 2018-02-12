@@ -12,23 +12,27 @@
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
 	<link rel="stylesheet" type="text/css" href="../css/xq_slide.css">
 	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/jx.js"></script>
 	<style type="text/css">
 	.neandpr{
 		width: 100px;
+	}
+	.nav .flp .wai:last-child{
+		width:203px !important;
 	}
 	</style>
 	<title>文章详情</title>
 </head>
 <body>
 	<!-- 头部start -->
-	<header>
+	<!--<header>
 		<div class="width macen title">
 			<span class="fl">淘艺</span>
 			<span class="fr mar40">
-				静雅轩<a href="login.html" class="fcred">[退出]</a>
+				静雅轩<a href="#" class="fcred">[退出]</a>
 			</span>
 		</div>
-	</header>
+	</header>-->
 	<!-- 头部end -->
 	<!-- 搜索 start -->
 	<div class="width macen topsearch">
@@ -36,7 +40,7 @@
 		<div class="search mat30">
 			<ul class="flp fs14 fcred">
 				<li class="pa510 active">拍品</li>
-				<li class="pa510">易物商品</li>
+				<li class="pa510">易物</li>
 				<li class="pa510">专场</li>
 				<li class="pa510">作者</li>
 				<li class="pa510">活动</li>
@@ -47,40 +51,33 @@
 		</div>
 		<div class="play fr">
 			<ul class="frp">
-				<li><a href="self.html" class="fcred">我的淘艺<span class="disib"></span></a></li>
+				<li><a href="#" class="fcred">静雅轩<span class="disib"></span></a></li>
 				<li><a href="inform.html" class="fcred">消息</a></li>
-				<li><a href="strcollet.html" class="fcred">收藏夹</a></li>
+				<li><a href="waitup.html" class="fcred">收藏夹</a></li>
 				<li><a href="javascript:publish()" class="fcred">发布</a></li>
 			</ul>
 		</div>
 	</div>
 	<!-- 搜索 end -->
 	<!-- 页面主体 -->
-	<div class="main macen width pore">
+	<div class="main macen width pore" style="height:1040px;">
 		<!-- 导航条 start -->
 		<nav class="nav">
 			<ul class="flp">
-				<li class="wai p_child bgred">
-					<a href="#"><span>拍品</span>分类</a>
+				<li class="wai p_child">
+					<a href="#"><span>拍品分类</span></a>
 				</li>
-				<li class="wai"><a href="index.html"><span id="span">首页</span></a></li>
-				<li class="wai"><a href="auction.html">活动</a></li>
-				<li class="wai"><a href="barter.html">易物</a></li>
-				<li class="wai"><a href="stretch.html">活动</a></li>
+				<li class="wai"><a href="index.html">首页</a><i style="visibility: hidden;"></i></li>
+				<li class="wai bgyellow"><a href="auction.html">拍卖</a><i style="visibility: hidden;"></i></li>
+				<li class="wai"><a href="barter.html">易物</a><i></i></li>
+				<li class="wai"><a href="stretch.html">活动</a><i></i></li>
 				<li class="wai"><a href="download.html">APP下载</a></li>
 			</ul>
 		</nav>
 		<!-- 导航条 end -->
 		<!-- 面包屑导航  start -->
-		<div class="directories">当前目录<span><a href="index.html">首页</a></span><a href="auction.html">>活动</a><span><a href="auction.html">>在线展览</a></span><span><a href="todayauc.html">>ADA画廊|建筑与音乐</a></span><span><a href="todayauc.html">>相册</a></span></div>
-		<div class="wi900">
-			<h2>和田玉拍品交流会-相册</h2>
-			<div class="ma10-0 bob000 pad10-0">
-				<span class="fcred fr"><a href="#">>浏览所有</a></span>
-				<div class="fl">第<span class="fcred">1</span>张/共<span>12</span>张</span></div>
-				<div class="macen neandpr"><span class="fcred"><a href="#">上一张</a>/<a href="#">下一张</a></span></div>
-			</div>
-		</div>
+		<div class="directories">当前位置<span><a href="index.html">首页</a></span><a href="auction.html">>活动</a><span><a href="auction.html">>在线展览</a></span><span><a href="todayauc.html">>ADA画廊建筑与音乐</a></span><span><a href="todayauc.html">>图片</a></span><span><a href="todayauc.html">>当前图片</a></span></div>
+		
 		<!-- 面包屑导航  end -->
 		<style type="text/css">
 			.xq_slide_close{
@@ -98,15 +95,17 @@
 				color: #fff;
 			}
 			.content_left{
-				height: 680px;
+				padding:30px;
+				border:1px solid #e3e3e3;
+				height: 830px;
 				position: relative;
 			}
 			.content_left .xq_slide{
 				height: 600px;
 				width: 600px;
 				position: absolute;
-				left: 100px;
-				top: 50px;
+				left: 150px;
+				top: 150px;
 				overflow: hidden;
 				/*background: #ccc;*/
 			}
@@ -129,61 +128,79 @@
 			}
 			.content_left .xq_btn{
 				position: absolute;
-			    font-size: 30px;
-			    height: 50px;
-			    /* height: 600px; */
-			    background: #e3e3e3;
+			    background-position:center center;
+			    background-repeat:no-repeat;
+			    background-size:100% 100%;
 			    cursor: pointer;
-			    top: 300px;
-			    line-height: 50px;
-			    text-align: center;
-			    color: #f2f2f2;
-			    width: 50px;
+			    top: 405px;
+			    width: 60px;
+			    height:60px;
 			}
 			.content_left .xq_btn:hover{
 				color: #fff;
 				font-size: 36px;
 			}
 			.xq_prev{
-				left: 0px;
+				left: 30px;
+				background-image:url("../img/pre1.png");
+			}
+			.xq_prev.on{
+				background-image:url("../img/pre2.png");
 			}
 			.xq_next{
-				right: 0px;
+				right: 30px;
+				background-image:url("../img/next1.png");
+			}
+			.xq_next.on{
+				background-image:url("../img/next2.png");
 			}
 			.xq_content_right{
+				border:1px solid #e3e3e3;
 				width: 200px;
 				float: right;
 				background: #fff;
-				height: 470px;
-				padding-top: 30px;
+				height:780px;
+				padding-top: 20px;
 			}
 			.xq_content_right .xq_smimg{
-				width: 180px;
-				height: 425px;
-				margin-left: 10px;
-				overflow: hidden;
+				/*width: 180px;*/
+				margin-left: 20px;
 			}
 			.xq_content_right .xq_smimg li{
-				width: 75px;
-				height: 75px;
+				width:160px;
+				height:160px;
 				float: left;
-				margin: 5px 5px;
+				margin-bottom:20px;
 				overflow: hidden;
 			}
 			.xq_content_right .xq_smimg li img{
-				width: 75px;
-				height: 75px;
+				width:100%;
+				height:100%;
 			}
 			.xq_content .h2{
-				margin-left: 95px;
+				position:absolute;
+				bottom:50px;
+				left:150px;
+			}
+			.xq_smimg-div{
+				overflow: hidden;
+				height: 720px;
 			}
 		</style>
 		<!-- 内容展示  start -->
-		<div class="width h800">
+		<div class="width">
 			<div class="xq_content">
 				<div class="xq_content_right">
 				</div>
 				<div class="content_left wi900">
+					<div class="wi900">
+						<p class="fs18">和田玉拍品交流会-相册</p>
+						<div class="ma10-0 bob000 pad20-0">
+							<span class="fcred fr"><a href="#">>返回</a></span>
+							<div class="fl">第<span>1</span>张/共<span>12</span>张</span></div>
+							<div class="macen neandpr"><span><a href="#">上一张</a>/<a href="#" class="fcred">下一张</a></span></div>
+						</div>
+					</div>
 					<div class="xq_slide">
 						<ul class="xq_imgbag">
 							<li><img src="../img/rp.jpg"></li>
@@ -197,16 +214,19 @@
 							<li><img src="../img/rp.jpg"></li>
 							<li><img src="../img/rp4.jpg"></li>
 							<li><img src="../img/rp.jpg"></li>
+							<li><img src="../img/rp2.jpg"></li>
 						</ul>
 					</div>
-					<div class="xq_prev xq_btn"><</div>
-					<div class="xq_next xq_btn">></div>
-				</div>
-				<div class="h2">
-					<h2>湖北天然绿松石念珠</h2>
-					<p>来源：<span>极简生活追求者</span></p>
-				</div>
-				
+					<div class="xq_prev xq_btn"></div>
+					<div class="xq_next xq_btn on"></div>
+					<div class="h2">
+						<p class="ovhid" style="width:600px;">
+							<span class="fs18 fl">湖北天然绿松石念珠</span>
+							<span class="fc7e fs16 fr">2016/06/15</span>
+						</p>
+						<p class="mat20 fc7e fs14">来源：<span>极简生活追求者</span></p>
+					</div>
+				</div>	
 			</div>
 		</div>
 		<!-- 内容展示  end -->
@@ -275,7 +295,11 @@
 			<li class="p_li">
 				<ul class="inner">
 					<li><span class="h3">版权信息</span></li>
-					<li class="copyright">淘艺会员所发布展示的“作品”“文章”版权归原作者所有，任何商业用途均须联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。Copyright 2010-2020宁波淘艺文化有限公司宁波十月Inc. 版权所有浙ICP备10206008号增值电信业务经营许可证浙B2-20100409</li>
+					<li class="copyright">
+						<p>淘艺会员所发布展示的“作品”“文章”版权归原作者所有，任何商业用途均须联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。</p>
+						<p>Copyright 2010-2020宁波淘艺文化有限公司宁波十月Inc. 版权所有</p>
+						<p>浙ICP备10206008号增值电信业务经营许可证浙<br>B2-20100409</p>
+					</li>
 				</ul>
 			</li>
 		</ul>

@@ -12,29 +12,30 @@
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
 	<link rel="stylesheet" type="text/css" href="../css/self.css">
 	<link rel="stylesheet" type="text/css" href="../css/info.css"/>
+	<link rel="stylesheet" type="text/css" href="../css/jx.css"/>
 	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/jx.js"></script>
 	<style type="text/css">
 	</style>
 	<title>易物申请详情</title>
 </head>
 <body>
-	    <!-- 头部start -->
-	<header>
+	<!-- 头部start -->
+	<!--<header>
 		<div class="width macen title">
 			<span class="fl">淘艺</span>
 			<span class="fr mar40">
-				静雅轩<a href="login.html" class="fcred">[退出]</a>
+				静雅轩<a href="#" class="fcred">[退出]</a>
 			</span>
 		</div>
-	</header>
-	<!-- 头部end -->
-	<!-- 搜索 start -->
+	</header>-->
+	<!-- 头部end --><!-- 搜索 start -->
 	<div class="width macen topsearch">
 		<a href="index.html"><div class="logo fl"></div></a>
 		<div class="search mat30">
 			<ul class="flp fs14 fcred">
 				<li class="pa510 active">拍品</li>
-				<li class="pa510">易物商品</li>
+				<li class="pa510">易物</li>
 				<li class="pa510">专场</li>
 				<li class="pa510">作者</li>
 				<li class="pa510">活动</li>
@@ -45,9 +46,9 @@
 		</div>
 		<div class="play fr">
 			<ul class="frp">
-				<li><a href="self.html" class="fcred">我的淘艺<span class="disib"></span></a></li>
-				<li><a href="inform.html" class="fcred">消息</a></li>
-				<li><a href="strcollet.html" class="fcred">收藏夹</a></li>
+				<li><a href="#" class="fcred">静雅轩<span class="disib"></span></a></li>
+				<li><a href="#" class="fcred">消息</a></li>
+				<li><a href="#" class="fcred">收藏夹</a></li>
 				<li><a href="javascript:publish()" class="fcred">发布</a></li>
 			</ul>
 		</div>
@@ -58,21 +59,26 @@
 	<div class="main macen width">
 		<!-- 导航条 start -->
 		<nav class="nav">
-			<ul class="flp">
-				<li class="wai">
-					<a href="#"><span></span>商品分类</a>
-				</li>
-				<li class="wai"><a href="index.html">首页</a></li>
-				<li class="wai"><a href="auction.html">拍卖</a></li>
-				<li class="wai"><a href="barter.html">易物</a></li>
-				<li class="wai"><a href="stretch.html">活动</a></li>
-				<li class="wai bgred"><a href="download.html">APP下载</a></li>
-			</ul>
-		</nav>
+            <ul class="flp ovhid">
+                <!--<li class="wai">
+                    <a href="#"><span></span>商品分类</a>
+                </li>-->
+                <li class="wai"><a href="index.html">首页</a><i></i></li>
+                <li class="wai"><a href="auction.html">拍卖</a><i></i></li>
+                <li class="wai"><a href="barter.html">易物</a><i></i></li>
+                <li class="wai"><a href="stretch.html">活动</a><i></i></li>
+                <li class="wai bgred" style="float:right;"><a href="download.html">APP下载</a></li>
+            </ul>
+        </nav>
 		<div class="boe31 manager ovhid">
-			<div class="wi970 fr bole31">
+			<div class="wi970 fr bole31 pad100 box-bor">
 				<div class="self_label">
-					<p class="self_title"><a href="#">易物管理</a><a href="#">>申请详情</a></p>
+					<p class="self_title">
+						<a href="#">易物管理</a>
+						<a href="#">>易物订单管理</a>
+						<a href="#">>进行中订单详情</a>
+						<a href="#">>退货中订单详情</a>
+					</p>
 				</div>
 				<div class="pad0-20">
 					<table class="ngoodinfo barreqinfo">
@@ -82,8 +88,12 @@
 						</tr>
 						<tr>
 							<td>己方艺术品：</td>
-							<td>
-								<div class="bgcc pad10 reqgood">
+							<td class="ovhid">
+								<div class="bgcc pad10 reqgood fl">
+									<img src="../img/bp4.jpg"/>
+									唐三彩马匹
+								</div>
+								<div class="bgcc pad10 reqgood fl mal20">
 									<img src="../img/bp4.jpg"/>
 									唐三彩马匹
 								</div>
@@ -94,23 +104,23 @@
 							<td>
 								<img src="../img/rp.jpg" class="arc selfimg">
 								<div class="disib mal20 fs16 lh36">
-									<div class="fcred">
-										<span style="display:inline-block">京德轩</span>
+									<div class="">
+										<span class="mar20 disib">京德轩</span>
 										陶艺号：<span>1235648463134</span>
 									</div>
-									<div>
-										<span>
+									<div class="ovhid">
+										<span class="ovhid fl">
 											<span class="bgs fcfff woicon">实</span>
-											<span class="bgv fcfff woicon">V</span>
-											<span class="bgb fcfff woicon">保</span>
-											<span class="bgc fcfff woicon">诚</span>
+											<span class="bgv fcfff woicon mal5">V</span>
+											<span class="bgb fcfff woicon mal5">保</span>
+											<span class="bgc fcfff woicon mal5">诚</span>
 										</span>
-										<span class="textcen">
-											<span class="wostar fs16">★</span>
-											<span class="wostar fs16">★</span>
-											<span class="wostar fs16">★</span>
-											<span class="wostar fs16">★</span>
-											<span class="wostar fs16">★</span>
+										<span class="textcen ovhid disib fl mal10">
+											<span class="wostar fs12 fl lh16">★</span>
+											<span class="wostar fs12 fl lh16">★</span>
+											<span class="wostar fs12 fl lh16">★</span>
+											<span class="wostar fs12 fl lh16">★</span>
+											<span class="wostar fs12 fl lh16">★</span>
 										</span>
 									</div>
 								</div>
@@ -122,8 +132,12 @@
 						</tr>
 						<tr>
 							<td>对方艺术品：</td>
-							<td>
-								<div class="bgcc pad10 reqgood">
+							<td class="ovhid">
+								<div class="bgcc pad10 reqgood fl">
+									<img src="../img/bp4.jpg"/>
+									唐三彩马匹
+								</div>
+								<div class="bgcc pad10 reqgood fl mal20">
 									<img src="../img/bp4.jpg"/>
 									唐三彩马匹
 								</div>
@@ -134,23 +148,23 @@
 							<td>
 								<img src="../img/rp.jpg" class="arc selfimg">
 								<div class="disib mal20 fs16 lh36">
-									<div>
-										<span style="display:inline-block">京德轩</span>
+									<div class="">
+										<span class="mar20 disib">京德轩</span>
 										陶艺号：<span>1235648463134</span>
 									</div>
-									<div>
-										<span>
+									<div class="ovhid">
+										<span class="ovhid fl">
 											<span class="bgs fcfff woicon">实</span>
-											<span class="bgv fcfff woicon">V</span>
-											<span class="bgb fcfff woicon">保</span>
-											<span class="bgc fcfff woicon">诚</span>
+											<span class="bgv fcfff woicon mal5">V</span>
+											<span class="bgb fcfff woicon mal5">保</span>
+											<span class="bgc fcfff woicon mal5">诚</span>
 										</span>
-										<span class="textcen">
-											<span class="wostar fs16">★</span>
-											<span class="wostar fs16">★</span>
-											<span class="wostar fs16">★</span>
-											<span class="wostar fs16">★</span>
-											<span class="wostar fs16">★</span>
+										<span class="textcen ovhid disib fl mal10">
+											<span class="wostar fs12 fl lh16">★</span>
+											<span class="wostar fs12 fl lh16">★</span>
+											<span class="wostar fs12 fl lh16">★</span>
+											<span class="wostar fs12 fl lh16">★</span>
+											<span class="wostar fs12 fl lh16">★</span>
 										</span>
 									</div>
 								</div>
@@ -173,102 +187,107 @@
 							<td>商品与描述不符无条件退货</td>
 						</tr>
 						<tr>
-							<td>退货运费承担：</td>
-							<td>双方协商</td>
+							<td>保证金冻结序号：</td>
+							<td>20151234567895203</td>
 						</tr>
 						<tr>
 							<td>创建时间：</td>
 							<td>2015-10-26 10:10:10</td>
 						</tr>
 					</table>
-					<p class="textrig mat10"><button class="mat20 updbtn mab30 mar10">同意</button><button class="mat20 updbtn mab30 mar10 bar">修改</button><button class="mat20 updbtn mab30 mar10 muban">拒绝</button><button class="mat20 updbtn mab30 mar10">私信</button><button class="mat20 updbtn mab30 mar10">稍后处理</button></p>
+					<p class="textrig mat10">
+						<!--<button class="mat20 updbtn mab30 mar10">同意</button>
+						<button class="mat20 updbtn mab30 mar10 bar">修改</button>
+						<button class="mat20 updbtn mab30 mar10 muban">拒绝</button>-->
+						<button class="mat20 updbtn mab30 mar10 barreqinfo-clk1">完成退货</button>
+						<button class="mat20 updbtn mab30 mar10">私信</button>
+						<button class="mat20 updbtn mab30 mar10">稍后处理</button></p>
 				</div>
 			</div>
 			<!-- 左侧工具条start -->
 			<div class="nav_left">
 				<ul class="fs16 pnav">
-					<li class="bobe31 pore padl70"><div class="sicon homeb poab"></div><a href="#">个人中心</a></li>
+					<li class="bobe31 pore padl70"><div class="sicon homeb poab"></div><a href="self.html">个人中心</a></li>
 					<li class="bobe31 pore padl70" for="playb"><div class="sicon playb poab"></div>账户管理<span class="fs16 rotate">></span></li>
 					<li class="bobe31 disn" name="playb">
 						<ul class="childnav">
-							<a href="#"><li class="padl70 ma10-0 cnavactive">付款充值</li></a>
-							<a href="#"><li class="padl70 ma10-0">提现申请</li></a>
-							<a href="#"><li class="padl70 ma10-0">保证金冻结查询</li></a>
-							<a href="#"><li class="padl70 ma10-0">账单查询</li></a>
+							<a href="recharge.html"><li class="padl70 ma10-0 cnavactive">付款充值</li></a>
+							<a href="getmaney.html"><li class="padl70 ma10-0">提现申请</li></a>
+							<a href="safemlist.html"><li class="padl70 ma10-0">保证金冻结查询</li></a>
+							<a href="billlist.html"><li class="padl70 ma10-0">账单查询</li></a>
 						</ul>
 					</li>
 					<li class="bobe31 pore padl70" for="sgb"><div class="sicon sgb poab"></div>商品管理<span class="fs16 rotate">></span></li>
 					<li class="bobe31 disn" name="sgb">
 						<ul class="childnav">
-							<a href="#"><li class="padl70 ma10-0 cnavactive">商品资料库</li></a>
-							<a href="#"><li class="padl70 ma10-0">待上传商品</li></a>
-							<a href="#"><li class="padl70 ma10-0">已上传商品</li></a>
-							<a href="#"><li class="padl70 ma10-0">模板</li></a>
+							<a href="goodbag1.html"><li class="padl70 ma10-0 cnavactive">商品资料库</li></a>
+							<a href="waitup.html"><li class="padl70 ma10-0">待上传商品</li></a>
+							<a href="trueup.html"><li class="padl70 ma10-0">已上传商品</li></a>
+							<a href="mblist.html"><li class="padl70 ma10-0">模板</li></a>
 						</ul>
 					</li>
-					<li class="bobe31 pore padl70" for="ywb"><div class="sicon ywb poab"></div>易物管理<span class="fs16 rotate">></span></li>
-					<li class="bobe31 disn" name="ywb">
+					<li class="bobe31 pore padl70 navactive" for="ywb"><div class="sicon ywb poab"></div>易物管理<span class="fs16 rotate">></span></li>
+					<li class="bobe31" name="ywb">
 						<ul class="childnav">
-							<a href="#"><li class="padl70 ma10-0 cnavactive">易物商品管理</li></a>
-							<a href="#"><li class="padl70 ma10-0">易物申请管理</li></a>
-							<a href="#"><li class="padl70 ma10-0">易物订单管理</li></a>
-							<a href="#"><li class="padl70 ma10-0">易物评价管理</li></a>
+							<a href="mblist2.html"><li class="padl70 ma10-0">易物商品管理</li></a>
+							<a href="barreq.html"><li class="padl70 ma10-0">易物申请管理</li></a>
+							<a href="ordermana.html"><li class="padl70 ma10-0 cnavactive">易物订单管理</li></a>
+							<a href="takeorder.html"><li class="padl70 ma10-0">易物评价管理</li></a>
 						</ul>
 					</li>
 					<li class="bobe31 pore padl70" for="pgb"><div class="sicon pgb poab"></div>拍卖管理<span class="fs16 rotate">></span></li>
 					<li class="bobe31 disn" name="pgb">
 						<ul class="childnav">
-							<a href="#"><li class="padl70 ma10-0 cnavactive">送拍管理</li></a>
-							<a href="#"><li class="padl70 ma10-0">专场管理</li></a>
-							<a href="#"><li class="padl70 ma10-0">竞拍管理</li></a>
-							<a href="#"><li class="padl70 ma10-0">拍卖订单管理</li></a>
-							<a href="#"><li class="padl70 ma10-0">拍卖评价管理</li></a>
+							<a href="aucmana.html"><li class="padl70 ma10-0 cnavactive">送拍管理</li></a>
+							<a href="auczcmana.html"><li class="padl70 ma10-0">专场管理</li></a>
+							<a href="upauc.html"><li class="padl70 ma10-0">竞拍管理</li></a>
+							<a href="aucorder.html"><li class="padl70 ma10-0">拍卖订单管理</li></a>
+							<a href="auctakelist.html"><li class="padl70 ma10-0">拍卖评价管理</li></a>
 						</ul>
 					</li>
 					<li class="bobe31 pore padl70" for="hgb"><div class="sicon hgb poab"></div>活动管理<span class="fs16 rotate">></span></li>
 					<li class="bobe31 disn" name="hgb">
 						<ul class="childnav">
-							<a href="#"><li class="padl70 ma10-0 cnavactive">发布新活动</li></a>
-							<a href="#"><li class="padl70 ma10-0">已发布的活动管理</li></a>
-							<a href="#"><li class="padl70 ma10-0">我上传的活动图片</li></a>
-							<a href="#"><li class="padl70 ma10-0">我提交的活动文章</li></a>
+							<a href="updstr.html"><li class="padl70 ma10-0 cnavactive">已发布的活动管理</li></a>
+							<a href="photomana.html"><li class="padl70 ma10-0">我上传的活动图片</li></a>
+							<a href="articlemg.html"><li class="padl70 ma10-0">我提交的活动文章</li></a>
 						</ul>
 					</li>
 					<li class="bobe31 pore padl70"><div class="sicon msgb poab"></div><a href="#">消息管理</a></li>
 					<li class="bobe31 pore padl70" for="infob"><div class="sicon infob poab"></div>个人资料管理<span class="fs16 rotate">></span></li>
 					<li class="bobe31 disn" name="infob">
 						<ul class="childnav">
-							<a href="#"><li class="padl70 ma10-0 cnavactive">完善个人资料</li></a>
-							<a href="#"><li class="padl70 ma10-0">认证管理</li></a>
-							<a href="#"><li class="padl70 ma10-0">收货地址</li></a>
-							<a href="#"><li class="padl70 ma10-0">权限查询</li></a>
-							<a href="#"><li class="padl70 ma10-0">个人页面预览</li></a>
+							<a href="per-profile.html"><li class="padl70 ma10-0 cnavactive">完善个人资料</li></a>
+							<a href="AMp-box.html"><li class="padl70 ma10-0">认证管理</li></a>
+							<a href="addressp-box.html"><li class="padl70 ma10-0">收货地址</li></a>
+							<a href="Authority-query.html"><li class="padl70 ma10-0">权限查询</li></a>
+							<a href="individual-session.html"><li class="padl70 ma10-0">个人页面预览</li></a>
 						</ul>
 					</li>
 					<li class="bobe31 pore padl70" for="zfb"><div class="sicon zfb poab"></div>增值服务<span class="fs16 rotate">></span></li>
 					<li class="bobe31 disn" name="zfb">
 						<ul class="childnav">
-							<a href="#"><li class="padl70 ma10-0 cnavactive">VIP会员</li></a>
-							<a href="#"><li class="padl70 ma10-0">商户合作</li></a>
+							<a href="vas.html"><li class="padl70 ma10-0 cnavactive">VIP会员</li></a>
+							<a href="business-cooperation.html"><li class="padl70 ma10-0">商户合作</li></a>
 						</ul>
 					</li>
 					<li class="bobe31 pore padl70" for="scjb"><div class="sicon scjb poab"></div>收藏夹&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs16 rotate">></span></li>
 					<li class="bobe31 disn" name="scjb">
 						<ul class="childnav">
-							<a href="#"><li class="padl70 ma10-0 cnavactive">拍卖专场</li></a>
-							<a href="#"><li class="padl70 ma10-0">店铺</li></a>
-							<a href="#"><li class="padl70 ma10-0">拍品</li></a>
-							<a href="#"><li class="padl70 ma10-0">易物商品</li></a>
-							<a href="#"><li class="padl70 ma10-0">活动</li></a>
+							<a href="waitup1.html"><li class="padl70 ma10-0 cnavactive">拍卖专场</li></a>
+							<a href="waitup2.html"><li class="padl70 ma10-0">店铺</li></a>
+							<a href="auccollet.html"><li class="padl70 ma10-0">拍品</li></a>
+							<a href="pushgood.html"><li class="padl70 ma10-0">易物商品</li></a>
+							<a href="strcollet.html"><li class="padl70 ma10-0">活动</li></a>
 						</ul>
 					</li>
-					<li class="bobe31 pore padl70 navactive" for="setb"><div class="sicon setb poab"></div>设置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs16 rotate">></span></li>
-					<li class="bobe31" name="setb">
+					<li class="bobe31 pore padl70" for="setb"><div class="sicon setb poab"></div>设置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs16 rotate">></span></li>
+					<li class="bobe31 disn" name="setb">
 						<ul class="childnav">
-							<a href="#"><li class="padl70 ma10-0 cnavactive">账户安全</li></a>
-							<a href="#"><li class="padl70 ma10-0">绑定第三方账号</li></a>
-							<a href="#"><li class="padl70 ma10-0">关于淘艺</li></a>
-							<a href="#"><li class="padl70 ma10-0">帮助中心</li></a>
+							<a href="mana.html"><li class="padl70 ma10-0">账户安全</li></a>
+							<a href="bindthird.html"><li class="padl70 ma10-0">绑定第三方账号</li></a>
+							<a href="about.html"><li class="padl70 ma10-0 cnavactive">关于淘艺</li></a>
+							<a href="help.html"><li class="padl70 ma10-0">帮助中心</li></a>
 						</ul>
 					</li>
 				</ul>
@@ -284,6 +303,32 @@
 			<div><button class="textcen updbtn mat20 mar40">易物设置</button><button class="textcen updbtn mat20">送拍设置</button></div>
 		</div>
 		<div><button class="macen textcen disb mat20 updbtn">确定</button></div>
+	</div>
+	
+	<div class="textcen disn newmsg1">
+		<div class="bgred fcfff lh45 fs16">提示</div>
+		<div class="pad20">
+			<div class="bgcc fs14 pad10 lh20">
+				同意申请，即表示同意“<a href="#" class="fcred">淘艺服务协议</a>”，易物双方即形成一份易物订单，请谨慎操作。
+			</div>
+			<div class="ovhid">
+				<button class="mat10 updbtn fl">取消提交</button>
+				<button class="mat10 updbtn fr bar">确定提交</button>
+			</div>
+		</div>
+	</div>
+	
+	<div class="textcen disn newmsg2">
+		<div class="bgred fcfff lh45 fs16">完成退货</div>
+		<div class="pad20">
+			<div class="bgcc fs14 pad10 lh20">
+				点击确定即代表退货成功，请谨慎对待！
+			</div>
+			<div class="ovhid">
+				<button class="mat10 updbtn fl">取消</button>
+				<button class="mat10 updbtn fr bar">确定</button>
+			</div>
+		</div>
 	</div>
 	<!-- 提醒框 end-->
 	<!-- footer start -->
@@ -348,24 +393,17 @@
 			<li class="p_li">
 				<ul class="inner">
 					<li><span class="h3">版权信息</span></li>
-					<li class="copyright">淘艺会员所发布展示的“作品”“文章”版权归原作者所有，任何商业用途均须联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。Copyright 2010-2020宁波淘艺文化有限公司宁波十月Inc. 版权所有浙ICP备10206008号增值电信业务经营许可证浙B2-20100409</li>
+					<li class="copyright">
+						<p>淘艺会员所发布展示的“作品”“文章”版权归原作者所有，任何商业用途均须联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。</p>
+						<p>Copyright 2010-2020宁波淘艺文化有限公司宁波十月Inc. 版权所有</p>
+						<p>浙ICP备10206008号增值电信业务经营许可证浙<br>B2-20100409</p>
+					</li>
 				</ul>
 			</li>
 		</ul>
 	</footer>
 	<!-- footer end  -->
-	<div class="textcen disn newmsg1">
-		<div class="bgred fcfff lh45 fs16">提示</div>
-		<div class="pad20">
-			<div class="bgcc fs14 pad10 lh20">
-				同意申请，即表示同意“<a href="#" class="fcred">淘艺服务协议</a>”，易物双方即形成一份易物订单，请谨慎操作。
-			</div>
-			<div class="ovhid">
-				<button class="mat10 updbtn fl">取消提交</button>
-				<button class="mat10 updbtn fr bar">确定提交</button>
-			</div>
-		</div>
-	</div>
+	
 	<script type="text/javascript" src="../js/slide.js"></script>
 	<script type="text/javascript" src="../js/layer/layer.js"></script>
 	<script type="text/javascript" src="../js/msg.js"></script>
@@ -387,14 +425,26 @@
 			content:$(".msgtip")
 		});
 	})
-	layer.open({
-	 	type:1,
-	 	closeBtn:false,
-	 	title:false,
-	 	shadeClose:true,
-	 	area:["400px","200px"],
-	 	content:$(".newmsg1")
-	});
+	
+	$(".barreqinfo-clk1").click(function(){
+		layer.open({
+		 	type:1,
+		 	closeBtn:false,
+		 	title:false,
+		 	shadeClose:true,
+		 	area:["400px","180px"],
+		 	content:$(".newmsg2")
+		});
+	})
+	
+//	layer.open({
+//	 	type:1,
+//	 	closeBtn:false,
+//	 	title:false,
+//	 	shadeClose:true,
+//	 	area:["400px","200px"],
+//	 	content:$(".newmsg1")
+//	});
 	</script>
 </body>
 </html>

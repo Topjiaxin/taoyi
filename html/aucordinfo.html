@@ -13,28 +13,28 @@
 	<link rel="stylesheet" type="text/css" href="../css/self.css">
 	<link rel="stylesheet" type="text/css" href="../css/info.css"/>
 	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/jx.js"></script>
 	<style type="text/css">
 	</style>
 	<title>竞拍订单详情</title>
 </head>
 <body>
-	    <!-- 头部start -->
-	<header>
+	<!-- 头部start -->
+	<!--<header>
 		<div class="width macen title">
 			<span class="fl">淘艺</span>
 			<span class="fr mar40">
-				静雅轩<a href="login.html" class="fcred">[退出]</a>
+				静雅轩<a href="#" class="fcred">[退出]</a>
 			</span>
 		</div>
-	</header>
-	<!-- 头部end -->
-	<!-- 搜索 start -->
+	</header>-->
+	<!-- 头部end --><!-- 搜索 start -->
 	<div class="width macen topsearch">
 		<a href="index.html"><div class="logo fl"></div></a>
 		<div class="search mat30">
 			<ul class="flp fs14 fcred">
 				<li class="pa510 active">拍品</li>
-				<li class="pa510">易物商品</li>
+				<li class="pa510">易物</li>
 				<li class="pa510">专场</li>
 				<li class="pa510">作者</li>
 				<li class="pa510">活动</li>
@@ -45,29 +45,30 @@
 		</div>
 		<div class="play fr">
 			<ul class="frp">
-				<li><a href="self.html" class="fcred">我的淘艺<span class="disib"></span></a></li>
-				<li><a href="inform.html" class="fcred">消息</a></li>
-				<li><a href="strcollet.html" class="fcred">收藏夹</a></li>
+				<li><a href="#" class="fcred">静雅轩<span class="disib"></span></a></li>
+				<li><a href="#" class="fcred">消息</a></li>
+				<li><a href="#" class="fcred">收藏夹</a></li>
 				<li><a href="javascript:publish()" class="fcred">发布</a></li>
 			</ul>
 		</div>
 	</div>
 	<!-- 搜索 end -->
+
 	<!-- 页面主体 -->
 	<div class="main macen width">
 		<!-- 导航条 start -->
 		<nav class="nav">
-			<ul class="flp">
-				<li class="wai">
-					<a href="#"><span></span>商品分类</a>
-				</li>
-				<li class="wai"><a href="index.html">首页</a></li>
-				<li class="wai"><a href="auction.html">拍卖</a></li>
-				<li class="wai"><a href="barter.html">易物</a></li>
-				<li class="wai"><a href="stretch.html">活动</a></li>
-				<li class="wai bgred"><a href="download.html">APP下载</a></li>
-			</ul>
-		</nav>
+            <ul class="flp ovhid">
+                <!--<li class="wai">
+                    <a href="#"><span></span>商品分类</a>
+                </li>-->
+                <li class="wai"><a href="index.html">首页</a><i></i></li>
+                <li class="wai"><a href="auction.html">拍卖</a><i></i></li>
+                <li class="wai"><a href="barter.html">易物</a><i></i></li>
+                <li class="wai"><a href="stretch.html">活动</a><i></i></li>
+                <li class="wai bgred" style="float:right;"><a href="download.html">APP下载</a></li>
+            </ul>
+        </nav>
 		<div class="boe31 manager ovhid">
 			<div class="wi970 fr bole31">
 				<div class="self_label">
@@ -112,10 +113,10 @@
 							<td>创建时间：</td>
 							<td>2015-10-26 10:10:10</td>
 						</tr>
-						<tr>
+						<!--<tr>
 							<td>完成时间：</td>
 							<td>2015-10-26 10:10:10</td>
-						</tr>
+						</tr>-->
 					</table>
 					<p class="textrig mat10">
 						<!--
@@ -125,7 +126,7 @@
 							<button class="mat20 updbtn mab30 mar10">投诉</button>
 							<button class="mat20 updbtn mab30 mar10">评价订单</button>
 						-->
-						<button class="mat20 updbtn mab30 mar10">付款</button><button class="mat20 updbtn mab30 mar10 bar">私信</button><button class="mat20 updbtn mab30 mar10">稍后处理</button></p>
+						<button class="mat20 updbtn mab30 mar10 savebtn">付款</button><button class="mat20 updbtn mab30 mar10 bar">私信</button><button class="mat20 updbtn mab30 mar10">稍后处理</button></p>
 				</div>
 			</div>
 			<!-- 左侧工具条start -->
@@ -159,13 +160,13 @@
 							<a href="#"><li class="padl70 ma10-0">易物评价管理</li></a>
 						</ul>
 					</li>
-					<li class="bobe31 pore padl70" for="pgb"><div class="sicon pgb poab"></div>拍卖管理<span class="fs16 rotate">></span></li>
-					<li class="bobe31 disn" name="pgb">
+					<li class="bobe31 pore padl70 navactive" for="pgb"><div class="sicon pgb poab"></div>拍卖管理<span class="fs16 rotate">></span></li>
+					<li class="bobe31" name="pgb">
 						<ul class="childnav">
-							<a href="#"><li class="padl70 ma10-0 cnavactive">送拍管理</li></a>
+							<a href="#"><li class="padl70 ma10-0">送拍管理</li></a>
 							<a href="#"><li class="padl70 ma10-0">专场管理</li></a>
 							<a href="#"><li class="padl70 ma10-0">竞拍管理</li></a>
-							<a href="#"><li class="padl70 ma10-0">拍卖订单管理</li></a>
+							<a href="#"><li class="padl70 ma10-0 cnavactive">拍卖订单管理</li></a>
 							<a href="#"><li class="padl70 ma10-0">拍卖评价管理</li></a>
 						</ul>
 					</li>
@@ -206,8 +207,8 @@
 							<a href="#"><li class="padl70 ma10-0">活动</li></a>
 						</ul>
 					</li>
-					<li class="bobe31 pore padl70 navactive" for="setb"><div class="sicon setb poab"></div>设置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs16 rotate">></span></li>
-					<li class="bobe31" name="setb">
+					<li class="bobe31 pore padl70" for="setb"><div class="sicon setb poab"></div>设置&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="fs16 rotate">></span></li>
+					<li class="bobe31 disn" name="setb">
 						<ul class="childnav">
 							<a href="#"><li class="padl70 ma10-0 cnavactive">账户安全</li></a>
 							<a href="#"><li class="padl70 ma10-0">绑定第三方账号</li></a>
@@ -282,7 +283,11 @@
 			<li class="p_li">
 				<ul class="inner">
 					<li><span class="h3">版权信息</span></li>
-					<li class="copyright">淘艺会员所发布展示的“作品”“文章”版权归原作者所有，任何商业用途均须联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。Copyright 2010-2020宁波淘艺文化有限公司宁波十月Inc. 版权所有浙ICP备10206008号增值电信业务经营许可证浙B2-20100409</li>
+					<li class="copyright">
+						<p>淘艺会员所发布展示的“作品”“文章”版权归原作者所有，任何商业用途均须联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。</p>
+						<p>Copyright 2010-2020宁波淘艺文化有限公司宁波十月Inc. 版权所有</p>
+						<p>浙ICP备10206008号增值电信业务经营许可证浙<br>B2-20100409</p>
+					</li>
 				</ul>
 			</li>
 		</ul>
@@ -291,7 +296,7 @@
 	<div class="textcen disn newmsg1">
 		<div class="bgred fcfff lh45 fs16">提示</div>
 		<div class="pad20">
-			<div class="bgcc fs14 pad10 lh20">
+			<div class="bgcc fs14 pad10 lh20 textlef">
 				点击“确定”即可对您竞拍成功的拍品进行付款，可参照“<a href="#" class="fcred">淘艺拍卖付款说明</a>”进行操作。
 			</div>
 			<div class="ovhid">
@@ -322,20 +327,20 @@
 		layer.open({
 			type:1,
 			title:false,
-			area:['430px','260px'],
+			area:['430px','200px'],
 			shadeClose:true,
 			closeBtn:0,
 			content:$(".newmsg1")
 		});
 	})
-	layer.open({
-	 	type:1,
-	 	closeBtn:false,
-	 	title:false,
-	 	shadeClose:true,
-	 	area:["400px","200px"],
-	 	content:$(".rejected")
-	});
+//	layer.open({
+//	 	type:1,
+//	 	closeBtn:false,
+//	 	title:false,
+//	 	shadeClose:true,
+//	 	area:["400px","200px"],
+//	 	content:$(".rejected")
+//	});
 	</script>
 </body>
 </html>

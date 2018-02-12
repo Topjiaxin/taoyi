@@ -12,14 +12,19 @@
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
 	<link rel="stylesheet" type="text/css" href="../css/info.css">
 	<link rel="stylesheet" type="text/css" href="../css/xq_slide.css">
+	<link rel="stylesheet" type="text/css" href="../css/jx.css">
 	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/jx.js"></script>
 	<style type="text/css">
 	/*同类商品推荐  start*/
-	.picScroll{margin-top: 20px;border-top:2px solid #ac8753; }
+	.tempWrap{
+		width:100% !important;
+	}
+	.picScroll{ }
 	.picScroll .bd{ position:relative;}
-	.picScroll .prev,.picScroll .next{ position: absolute; top: 140px; left:-5px; display: block; width: 20px; height:20px; overflow: hidden; color: #fff;background: #b6b6b6;line-height: 20px;text-align: center;z-index: 1000;}
+	.picScroll .prev,.picScroll .next{ position: absolute; top: 140px; left:-5px; display: block; width: 30px; height:50px; overflow: hidden; color: #949494;line-height: 20px;text-align: center;z-index: 1000;}
 	.picScroll .next{ left:auto; right:-5px;}
-	.picScroll .scrollWrap{ padding-left:20px  }
+	.picScroll .scrollWrap{  }
 	.picScroll ul{ overflow:hidden; zoom:1; }
 	.picScroll li{ width:198px; margin-right: 20px; position:relative; float:left; display:inline; overflow: hidden;}
 	.picScroll li .pic {position:relative;display:block;overflow:hidden;margin-bottom:6px;}
@@ -29,20 +34,23 @@
 	.picScroll li .movielist_tt {position:relative;height:16px;line-height:16px;padding-right:30px;overflow:hidden;position:relative;}
 	.picScroll li .movielist_tt a {font-size:14px;}
 	.picScroll li .score {color:#FF6600;font-family:Arial;position:absolute;top:0;right:10px;}
+	.nav .flp .wai:last-child{
+		width:203px !important;
+	}
 	/*同类商品推荐  end*/
 	</style>
 	<title>易物详情</title>
 </head>
 <body>
-	    <!-- 头部start -->
-	<header>
+	<!-- 头部start -->
+	<!--<header>
 		<div class="width macen title">
 			<span class="fl">淘艺</span>
 			<span class="fr mar40">
-				静雅轩<a href="login.html" class="fcred">[退出]</a>
+				静雅轩<a href="#" class="fcred">[退出]</a>
 			</span>
 		</div>
-	</header>
+	</header>-->
 	<!-- 头部end -->
 	<!-- 搜索 start -->
 	<div class="width macen topsearch">
@@ -61,9 +69,9 @@
 		</div>
 		<div class="play fr">
 			<ul class="frp">
-				<li><a href="self.html" class="fcred">我的淘艺<span class="disib"></span></a></li>
-				<li><a href="inform.html" class="fcred">消息</a></li>
-				<li><a href="strcollet.html" class="fcred">收藏夹</a></li>
+				<li><a href="#" class="fcred">静雅轩<span class="disib"></span></a></li>
+				<li><a href="#" class="fcred">消息</a></li>
+				<li><a href="#" class="fcred">收藏夹</a></li>
 				<li><a href="javascript:publish()" class="fcred">发布</a></li>
 			</ul>
 		</div>
@@ -74,13 +82,13 @@
 		<!-- 导航条 start -->
 		<nav class="nav">
 			<ul class="flp">
-				<li class="wai bgred">
-					<a href="#"><span>易物</span>分类</a>
+				<li class="wai p_child">
+					<a href="#"><span>拍品分类</span></a>
 				</li>
-				<li class="wai"><a href="index.html"><span id="span">首页</span></a></li>
-				<li class="wai"><a href="auction.html">拍卖</a></li>
-				<li class="wai"><a href="barter.html">易物</a></li>
-				<li class="wai"><a href="stretch.html">活动</a></li>
+				<li class="wai"><a href="index.html">首页</a><i style="visibility: hidden;"></i></li>
+				<li class="wai bgyellow"><a href="auction.html">拍卖</a><i style="visibility: hidden;"></i></li>
+				<li class="wai"><a href="barter.html">易物</a><i></i></li>
+				<li class="wai"><a href="stretch.html">活动</a><i></i></li>
 				<li class="wai"><a href="download.html">APP下载</a></li>
 			</ul>
 		</nav>
@@ -88,24 +96,83 @@
 		<!-- 面包屑导航  start -->
 		<div class="directories">当前目录<span><a href="index.html">首页</a></span><a href="auction.html">>拍卖</a><span><a href="auction.html">>西画雕塑</a></span><span><a href="auction.html">>油画</a></span><span><a href="auction.html">>湖北天然绿松石念珠</a></span></div>
 		<!-- 面包屑导航  end -->
-		<div class="width ovhid mab30">
+		<div class="width mab20">
 			<!-- 右边 窗口 start -->
-			<div class="wi235 fr boe31 h300 textcen">
-				<div class="codebag">
-					<div>扫一扫下载陶艺APP</div>
-					<div class="code macen">
-						<img src="../img/code.png">
+			<div class="wi235 fr textcen barinfo-history">
+				<div class="barinfo-title ovhid">
+					<p class="fl fs16">浏览记录</p>
+					<a class="fr" href="#">全部<i>></i></a>
+				</div>
+				<div class="barinfo-item ovhid pad10-0 borbd">
+					<div class="fl bobe31">
+						<img src="../img/nimg.png"/>
 					</div>
+					<div class="fr">
+						<p class="fs14">王小清|烟霞自一川</p>
+						<span class="fc7e mat10">琚瑶阁</span>
+						<div class="ovhid">
+							<span class="iconn icon1-jx"></span>
+							<span class="iconn icon2-jx"></span>
+							<span class="iconn icon3-jx"></span>
+							<span class="iconn icon4-jx"></span>
+							<span class="icon5-jx"></span>
+							<span class="icon5-jx"></span>
+							<span class="icon5-jx"></span>
+							<span class="icon5-jx"></span>
+						</div>
+					</div>
+				</div>
+				<div class="barinfo-item ovhid pad10-0 borbd">
+					<div class="fl bobe31">
+						<img src="../img/nimg.png"/>
+					</div>
+					<div class="fr">
+						<p class="fs14">王小清|烟霞自一川</p>
+						<span class="fc7e mat10">琚瑶阁</span>
+						<div class="ovhid">
+							<span class="iconn icon1-jx"></span>
+							<span class="iconn icon2-jx"></span>
+							<span class="iconn icon3-jx"></span>
+							<span class="iconn icon4-jx"></span>
+							<span class="icon5-jx"></span>
+							<span class="icon5-jx"></span>
+							<span class="icon5-jx"></span>
+							<span class="icon5-jx"></span>
+						</div>
+					</div>
+				</div>
+				<div class="barinfo-item ovhid pad10-0 borbd">
+					<div class="fl bobe31">
+						<img src="../img/nimg.png"/>
+					</div>
+					<div class="fr">
+						<p class="fs14">王小清|烟霞自一川</p>
+						<span class="fc7e mat10">琚瑶阁</span>
+						<div class="ovhid">
+							<span class="iconn icon1-jx"></span>
+							<span class="iconn icon2-jx"></span>
+							<span class="iconn icon3-jx"></span>
+							<span class="iconn icon4-jx"></span>
+							<span class="icon5-jx"></span>
+							<span class="icon5-jx"></span>
+							<span class="icon5-jx"></span>
+							<span class="icon5-jx"></span>
+						</div>
+					</div>
+				</div>
+				<div class="changpage ovhid">
+					<div class="next fr">></div>
+					<div class="prev fr"><</div>
 				</div>
 			</div>
 			<!-- 右边窗口end -->
-			<div class="wi900 h500 boe31 pad10 pore">
+			<div class="wi900 boe31 pad10 pore">
 				<div class="disib">
 					<div class="pore impimg">
-						<img src="../img/impro_good.png">
-						<div class="poab text">
+						<img src="../img/impro_good_1.png">
+						<!--<div class="poab text">
 							<span class="paisdb icon fs16"> 距结束：00天 08时 01分 56秒+延时</span>
-						</div>
+						</div>-->
 					</div>
 					<div class="smimg">
 						<img src="../img/good_s1.png" class="activ" onclick="xq_slide(0)">
@@ -146,12 +213,30 @@
 					</div>
 					<!-- 图片轮播图  end -->
 				</div>
-				<div class="disib wi500 fr">
+				<div class="disib wi500 fr psr0" style="min-height:460px;">
+					<div class="poab barinfo-warn">
+						<span>敬告：</span>
+						您的易物行为表明已认同淘艺平台的
+						<i class="c-red1">易物规则</i>
+					</div>
 					<div class="borbd goodid">
-						<h2 class="disib">湖北天然绿松石念珠</h2>
-						<p>拍品编号：<span>20154564595000</span></p>
-						<p>
-							店铺：<span>古玩爱好收藏者</span>
+						<div class="borbd goodid pore aucinfo-enjoy ovhid">
+							<div class="fl">
+								<h2>湖北天然绿松石念珠</h2>
+								<div>
+									<span>分享</span>
+									<span>收藏</span>
+									<span>举报</span>
+								</div>
+							</div>
+							<div class="fr">
+								<p>编号：<span>20154564595000</span></p>
+								<p><span>123</span>围观</p>
+							</div>
+							<!--<img src="../img/colock.png" class="poab" onclick="setmsg()">-->
+						</div>
+						<p class="ma10-0">
+							<span class="mar25 fs16">古玩爱好收藏者</span>
 							<span class="bgs fcfff woicon">实</span>
 							<span class="bgv fcfff woicon">V</span>
 							<span class="bgb fcfff woicon">保</span>
@@ -163,119 +248,294 @@
 							<span class="wostar fs16">★</span>
 						</p>
 					</div>
-					<div class="borbd clum">
+					<div class="borbd clum" style="color:#000;">
 						<p><span>易物需求：不限</span></p>
 					</div>
-					<div class="borbd clum">
-						<p><span>分类：中国书画-山水</span><span>类型：原创</span></p>
+					<div class="ovhid mat20">
+						<div class="fs16 fl barinfo-change mar10 on">我要换</div>
+					    <div class="fs16 fl barinfo-change">私信</div>
 					</div>
-					<div class=" clum">
-						<span class="fcred collet icon"></span>收藏
-						<span class="fcred share icon"></span>分享
-						<span class="fcred jubao icon"></span>举报
-						<span class="fcred weiguan icon">123</span>围观
-					</div>
-					<div class="mego fs18 poab">我要换</div>
+					
 				</div>
 			</div>
 			<!-- 拍品详情  start -->
-			<div class="boe31 mat30 ppinfo wi900">
-				<h3>艺术品详情：</h3>
-				<table class="ppwid">
-					<tr>
-						<td>编号：877111111</td>
-						<td>尺寸：长68cm 宽：135cm</td>
-						<td>题材：山水</td>
-					</tr>
-					<tr>
-						<td>年代：当代</td>
-						<td>装裱：横幅</td>
-						<td>形式：中堂</td>
-					</tr>
-					<tr>
-						<td>材质：纸本</td>
-						<td>完残状况：污痕 折痕 边有撕口 缺肉</td>
-						<td></td>
-					</tr>
-					<tr>
-						<td colspan="3">备注：此件作品系艺术家青年时代创作，用色明快，布局严谨作品面积约为8.26平尺</td>
-					</tr>
-				</table>
-				<div>
-					<h3>承诺：</h3>
-					<span>1、运费担负：卖家包邮</span>
-					<span>2、承诺发货上货物运输或相关保险</span>
-					<span>3、承诺商品与描述不符退货</span>
+			<div class="boe31 mat30 pad20 aucinfo-detail">
+				<div class="bobe31 mab30">
+					<h3>拍品详情</h3>
+					<div>
+						<p class="mat30">
+							<span class="aucinfo-class">分类：</span>
+							珠宝首饰>绿松石
+						</p>
+						<p class="mat30">
+							<span class="aucinfo-class">类型：</span>
+							原创（来自制作者本人）
+						</p>
+						<p class="mat30">
+							<span class="aucinfo-class">分类分类：</span>
+							珠宝首饰>绿松石
+						</p>
+					</div>
+					<div class="ovhid aucinfo-word mat30 mab30">
+						<p>描述：</p>
+						<div>
+							<p>原创（来自制作者本人）原创（来自制作者本人）</p>
+							<p>原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）</p>
+							<p>原创（来自制作者本人）原创（来自制作者本人）</p>
+							<p>原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）</p>
+							<p>原创（来自制作者本人）原创（来自制作者本人）</p>
+							<p>原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）</p>
+							<p>原创（来自制作者本人）原创（来自制作者本人）</p>
+							<p>原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）原创（来自制作者本人）</p>
+						</div>
+					</div>
+				</div>
+				<div class="aucinfo-commit">
+					<h3 class="mab20">承诺</h3>
+					<ul class="boe31 ovhid">
+						<li class="fl">运费担负：卖家包邮</li>
+						<li class="fl">保险担负：双方各自承担</li>
+						<li class="fl">退货：商品与描述不符退货</li>
+					</ul>
 				</div>
 			</div>
 			<!-- 拍品详情  end -->
 			<!-- 同类推荐  start -->
-			<h2>同类艺术品推荐</h2>
-			<div class="picScroll wi900 pad10 boe31">
-				<div class="bd">
-					<a href="javascript:void(0)" class="prev"><</a>
-					<a href="javascript:void(0)" class="next">></a>
-					<div class="scrollWrap">
-						<ul class="picList">
-							<li class="godbag">
-								<a href="#" class="pic"><img src="../img/rp.jpg"></a>
-								<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-								<div class="collect textlef"><a href="#">琚瑶阁</a></div>
+			<p class="fs18 ma20-0">同类艺术品推荐</p>
+			<div class="">
+				<div class="barinfo-suggest0">
+					<a href="javascript:void(0)" class="prev">
+						<img src="../img/left.jpg"/>
+					</a>
+					<a href="javascript:void(0)" class="next">
+						<img src="../img/right.jpg"/>
+					</a>
+					<div class="barinfo-lunbo ovhid">							
+						<ul class="ovhid">
+						   <li class="godbag godbag1 hotbag1 hotbag">
+								<a href="#"><img src="../img/bp1.jpg"></a>
+								<div class="goodname"><a href="#">王小清 | 烟霞自一川</a></div>
+								<p class="collect textlef">
+									<a href="#">琚瑶阁</a>
+									<span class="iconn icon1-jx"></span>
+									<span class="iconn icon2-jx"></span>
+									<span class="iconn icon3-jx"></span>
+									<span class="iconn icon4-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+								</p>
+						   </li>
+						   <li class="godbag godbag1 hotbag hotbag1">
+								<a href="#"><img src="../img/bp20.jpg"></a>
+								<div class="goodname"><a href="#">王小清 | 烟霞自一川</a></div>
+								<p class="collect textlef">
+									<a href="#">琚瑶阁</a>
+									<span class="iconn icon1-jx"></span>
+									<span class="iconn icon2-jx"></span>
+									<span class="iconn icon3-jx"></span>
+									<span class="iconn icon4-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+								</p>
 						   	</li>
-						   <li class="godbag">
-								<a href="#" class="pic"><img src="../img/rp.jpg"></a>
-								<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-								<div class="collect textlef"><a href="#">琚瑶阁</a></div>
+						   <li class="godbag godbag1 hotbag hotbag1">
+								<a href="#"><img src="../img/bp30.jpg"></a>
+								<div class="goodname"><a href="#">王小清 | 烟霞自一川</a></div>
+								<p class="collect textlef">
+									<a href="#">琚瑶阁</a>
+									<span class="iconn icon1-jx"></span>
+									<span class="iconn icon2-jx"></span>
+									<span class="iconn icon3-jx"></span>
+									<span class="iconn icon4-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+								</p>
 						   	</li>
-						   <li class="godbag">
-								<a href="#" class="pic"><img src="../img/rp.jpg"></a>
-								<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-								<div class="collect textlef"><a href="#">琚瑶阁</a></div>
+						   <li class="godbag godbag1 hotbag hotbag1">
+								<a href="#"><img src="../img/bp4.jpg"></a>
+								<div class="goodname"><a href="#">王小清 | 烟霞自一川</a></div>
+								<p class="collect textlef">
+									<a href="#">琚瑶阁</a>
+									<span class="iconn icon1-jx"></span>
+									<span class="iconn icon2-jx"></span>
+									<span class="iconn icon3-jx"></span>
+									<span class="iconn icon4-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+								</p>
 						   	</li>
-						   <li class="godbag">
-								<a href="#" class="pic"><img src="../img/rp.jpg"></a>
-								<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-								<div class="collect textlef"><a href="#">琚瑶阁</a></div>
+						   	<li class="godbag godbag1 hotbag hotbag1">
+								<a href="#"><img src="../img/bp1.jpg"></a>
+								<div class="goodname"><a href="#">王小清 | 烟霞自一川</a></div>
+								<p class="collect textlef">
+									<a href="#">琚瑶阁</a>
+									<span class="iconn icon1-jx"></span>
+									<span class="iconn icon2-jx"></span>
+									<span class="iconn icon3-jx"></span>
+									<span class="iconn icon4-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+								</p>
+						   </li>
+						   <li class="godbag godbag1 hotbag hotbag1">
+								<a href="#"><img src="../img/bp20.jpg"></a>
+								<div class="goodname"><a href="#">王小清 | 烟霞自一川</a></div>
+								<p class="collect textlef">
+									<a href="#">琚瑶阁</a>
+									<span class="iconn icon1-jx"></span>
+									<span class="iconn icon2-jx"></span>
+									<span class="iconn icon3-jx"></span>
+									<span class="iconn icon4-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+								</p>
 						   	</li>
-						   	<li class="godbag">
-								<a href="#" class="pic"><img src="../img/rp.jpg"></a>
-								<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-								<div class="collect textlef"><a href="#">琚瑶阁</a></div>
+						   <li class="godbag godbag1 hotbag hotbag1">
+								<a href="#"><img src="../img/bp30.jpg"></a>
+								<div class="goodname"><a href="#">王小清 | 烟霞自一川</a></div>
+								<p class="collect textlef">
+									<a href="#">琚瑶阁</a>
+									<span class="iconn icon1-jx"></span>
+									<span class="iconn icon2-jx"></span>
+									<span class="iconn icon3-jx"></span>
+									<span class="iconn icon4-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+								</p>
 						   	</li>
-						   <li class="godbag">
-								<a href="#" class="pic"><img src="../img/rp.jpg"></a>
-								<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-								<div class="collect textlef"><a href="#">琚瑶阁</a></div>
+						   <li class="godbag godbag1 hotbag hotbag1">
+								<a href="#"><img src="../img/bp4.jpg"></a>
+								<div class="goodname"><a href="#">王小清 | 烟霞自一川</a></div>
+								<p class="collect textlef">
+									<a href="#">琚瑶阁</a>
+									<span class="iconn icon1-jx"></span>
+									<span class="iconn icon2-jx"></span>
+									<span class="iconn icon3-jx"></span>
+									<span class="iconn icon4-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+								</p>
 						   	</li>
-						   <li class="godbag">
-								<a href="#" class="pic"><img src="../img/rp.jpg"></a>
-								<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-								<div class="collect textlef"><a href="#">琚瑶阁</a></div>
+						   	<li class="godbag godbag1 hotbag hotbag1">
+								<a href="#"><img src="../img/bp1.jpg"></a>
+								<div class="goodname"><a href="#">王小清 | 烟霞自一川</a></div>
+								<p class="collect textlef">
+									<a href="#">琚瑶阁</a>
+									<span class="iconn icon1-jx"></span>
+									<span class="iconn icon2-jx"></span>
+									<span class="iconn icon3-jx"></span>
+									<span class="iconn icon4-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+								</p>
+						   </li>
+						   <li class="godbag godbag1 hotbag hotbag1">
+								<a href="#"><img src="../img/bp20.jpg"></a>
+								<div class="goodname"><a href="#">王小清 | 烟霞自一川</a></div>
+								<p class="collect textlef">
+									<a href="#">琚瑶阁</a>
+									<span class="iconn icon1-jx"></span>
+									<span class="iconn icon2-jx"></span>
+									<span class="iconn icon3-jx"></span>
+									<span class="iconn icon4-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+								</p>
 						   	</li>
-						   <li class="godbag">
-								<a href="#" class="pic"><img src="../img/rp.jpg"></a>
-								<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-								<div class="collect textlef"><a href="#">琚瑶阁</a></div>
+						   <li class="godbag godbag1 hotbag hotbag1">
+								<a href="#"><img src="../img/bp30.jpg"></a>
+								<div class="goodname"><a href="#">王小清 | 烟霞自一川</a></div>
+								<p class="collect textlef">
+									<a href="#">琚瑶阁</a>
+									<span class="iconn icon1-jx"></span>
+									<span class="iconn icon2-jx"></span>
+									<span class="iconn icon3-jx"></span>
+									<span class="iconn icon4-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+								</p>
 						   	</li>
-						   	<li class="godbag">
-								<a href="#" class="pic"><img src="../img/rp.jpg"></a>
-								<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-								<div class="collect textlef"><a href="#">琚瑶阁</a></div>
+						   <li class="godbag godbag1 hotbag hotbag1">
+								<a href="#"><img src="../img/bp4.jpg"></a>
+								<div class="goodname"><a href="#">王小清 | 烟霞自一川</a></div>
+								<p class="collect textlef">
+									<a href="#">琚瑶阁</a>
+									<span class="iconn icon1-jx"></span>
+									<span class="iconn icon2-jx"></span>
+									<span class="iconn icon3-jx"></span>
+									<span class="iconn icon4-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+								</p>
 						   	</li>
-						   <li class="godbag">
-								<a href="#" class="pic"><img src="../img/rp.jpg"></a>
-								<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-								<div class="collect textlef"><a href="#">琚瑶阁</a></div>
+						   	<li class="godbag godbag1 hotbag1 hotbag">
+								<a href="#"><img src="../img/bp1.jpg"></a>
+								<div class="goodname"><a href="#">王小清 | 烟霞自一川</a></div>
+								<p class="collect textlef">
+									<a href="#">琚瑶阁</a>
+									<span class="iconn icon1-jx"></span>
+									<span class="iconn icon2-jx"></span>
+									<span class="iconn icon3-jx"></span>
+									<span class="iconn icon4-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+								</p>
+						   </li>
+						   <li class="godbag godbag1 hotbag hotbag1">
+								<a href="#"><img src="../img/bp20.jpg"></a>
+								<div class="goodname"><a href="#">王小清 | 烟霞自一川</a></div>
+								<p class="collect textlef">
+									<a href="#">琚瑶阁</a>
+									<span class="iconn icon1-jx"></span>
+									<span class="iconn icon2-jx"></span>
+									<span class="iconn icon3-jx"></span>
+									<span class="iconn icon4-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+								</p>
 						   	</li>
-						   <li class="godbag">
-								<a href="#" class="pic"><img src="../img/rp.jpg"></a>
-								<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-								<div class="collect textlef"><a href="#">琚瑶阁</a></div>
-						   	</li>
-						   <li class="godbag">
-								<a href="#" class="pic"><img src="../img/rp.jpg"></a>
-								<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-								<div class="collect textlef"><a href="#">琚瑶阁</a></div>
+						   <li class="godbag godbag1 hotbag hotbag1">
+								<a href="#"><img src="../img/bp30.jpg"></a>
+								<div class="goodname"><a href="#">王小清 | 烟霞自一川</a></div>
+								<p class="collect textlef">
+									<a href="#">琚瑶阁</a>
+									<span class="iconn icon1-jx"></span>
+									<span class="iconn icon2-jx"></span>
+									<span class="iconn icon3-jx"></span>
+									<span class="iconn icon4-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+									<span class="icon5-jx"></span>
+								</p>
 						   	</li>
 						</ul>
 					</div>
@@ -283,7 +543,7 @@
 			</div>
 		<!-- 同类推荐  end -->
 		</div>
-		<a href="#"><img src="../img/jpb.jpg" class="ma50-0 wi900"></a>
+		<a href="#" class="jpg"><img src="../img/jpb.jpg" class=""></a>
 	</div>
 	<!-- 页面主体结束 -->
 	<!-- footer start -->
@@ -348,7 +608,11 @@
 			<li class="p_li">
 				<ul class="inner">
 					<li><span class="h3">版权信息</span></li>
-					<li class="copyright">淘艺会员所发布展示的“作品”“文章”版权归原作者所有，任何商业用途均须联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。Copyright 2010-2020宁波淘艺文化有限公司宁波十月Inc. 版权所有浙ICP备10206008号增值电信业务经营许可证浙B2-20100409</li>
+					<li class="copyright">
+						<p>淘艺会员所发布展示的“作品”“文章”版权归原作者所有，任何商业用途均须联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。</p>
+						<p>Copyright 2010-2020宁波淘艺文化有限公司宁波十月Inc. 版权所有</p>
+						<p>浙ICP备10206008号增值电信业务经营许可证浙<br>B2-20100409</p>
+					</li>
 				</ul>
 			</li>
 		</ul>
@@ -362,6 +626,10 @@
 	<script type="text/javascript">
 	// 启用同类商品推荐
 	jQuery(".picScroll").slide({ mainCell:".picList", effect:"left",vis:4, pnLoop:true, scroll:4, autoPage:true});
+	
+	
+
 	</script>
+	
 </body>
 </html>

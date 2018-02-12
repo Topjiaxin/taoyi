@@ -1,17 +1,17 @@
 @charset "utf-8";
 /*login   start*/
 .content{
-	background: url('../img/login_bg.png');
 	position: relative;
 	height: 580px;
 	margin-bottom: 70px;
 }
 .login{
-	height: 430px;
+	box-shadow:0 0 30px rgba(68,31,5,0.9);
+	height: 480px;
 	width: 350px;
 	background: #f0f0f0;
 	position: absolute;
-	top: 100px;
+	top: 12px;
 	right: 150px;
 }
 .login .title{
@@ -19,13 +19,15 @@
 	width: 310px;
 	margin: 0px auto;
 }
-.login .title h2{
+.login .title p{
+	color:#5A5A5A;
 	height: 70px;
 	line-height: 70px;
 	float: left;
 	font-size: 24px;
 }
 .login .title span{
+	font-size:14px;
 	height: 70px;
 	line-height: 70px;
 	float: right;
@@ -50,14 +52,32 @@
 	width: 310px;
 	margin: 0px auto;
 }
+li.commit_p{
+	margin:30px 0 20px 0 !important;
+	overflow:hidden;
+	background-image: url(../img/box1.png);
+    background-position: 0px center;
+    background-repeat: no-repeat;
+    background-size: 12px 12px;
+}
+.commit_p a{
+	display:inline-block;
+	font-size:14px;
+}
+.commit_p a:nth-child(1){
+	float:left;
+	padding-left:25px;
+}
+.commit_p a:nth-child(2){
+	float:right;
+}
 .login_form li{
-	margin: 25px auto;
+	margin: 20px auto;
 
 }
 .login_form li input{
 	border: 1px solid #dddedd;
 	width: 290px;
-	margin: 0px 10px 0px !important;
 }
 .fr{
 	float: right;
@@ -69,8 +89,7 @@
 	background: #aaa8ad;
 	margin: 40px auto;
 }
-.other_login h3{
-	font-size: 14px;
+.other_login p{
 	text-align: center;
 	background: #f0f0f0;
 	width: 120px;
@@ -78,20 +97,30 @@
 	line-height: 3px;
 	display: block;
 	margin: -15px 95px;
+	color:#b3b3b5;
+	font-size:14px;
 }
 .other_login div{
+	text-align:center;
 	width: 220px;
 	margin: 20px auto;
 }
 .other_login div .img{
-	width: 50px;
-	height: 50px;
-	float: left;
-	background: #fff;
-	border-radius: 25px;
-	margin: 0px 10px;
+	display:inline-block;
+	width: 70px;
+	height: 70px;
+    margin:0;
 }
 .other_login div .img img{
-	margin: 10px 9px;
+	width:100%;
+	height:100%;
+}
+.next1{
+    height: 40px;
+    border-radius: 4px;
+    background: #c12736;
+    color: #fff;
+    padding: 5px 0px;
+    font-size: 24px;
 }
 /*login   end*/

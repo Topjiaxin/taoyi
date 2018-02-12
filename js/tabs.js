@@ -16,8 +16,10 @@ $(function  () {
 			};
 			if (lab=="qiang") {
 				$(".tab_btn").show();
+				$(".selfzcmana-hid").show();
 			}else{
 				$(".tab_btn").hide();
+				$(".selfzcmana-hid").hide();
 			}
 			$(this).addClass("xq_tabs_activ");
 		};

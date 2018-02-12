@@ -11,22 +11,29 @@
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
 	<link rel="stylesheet" type="text/css" href="../css/info.css">
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/jx.css">
 	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/jx.js"></script>
 	<style type="text/css">
-		
+		.strpho img{
+			width:190px !important;
+		}
+		.goodname{
+			border-bottom:0;
+		}
 	</style>
 	<title>精品店铺</title>
 </head>
 <body>
 	<!-- 头部start -->
-	<header>
+	<!--<header>
 		<div class="width macen title">
 			<span class="fl">淘艺</span>
 			<span class="fr mar40">
-				静雅轩<a href="login.html" class="fcred">[退出]</a>
+				静雅轩<a href="#" class="fcred">[退出]</a>
 			</span>
 		</div>
-	</header>
+	</header>-->
 	<!-- 头部end -->
 	<!-- 搜索 start -->
 	<div class="width macen topsearch">
@@ -45,9 +52,9 @@
 		</div>
 		<div class="play fr">
 			<ul class="frp">
-				<li><a href="self.html" class="fcred">我的淘艺<span class="disib"></span></a></li>
+				<li><a href="#" class="fcred">静雅轩<span class="disib"></span></a></li>
 				<li><a href="inform.html" class="fcred">消息</a></li>
-				<li><a href="strcollet.html" class="fcred">收藏夹</a></li>
+				<li><a href="waitup.html" class="fcred">收藏夹</a></li>
 				<li><a href="javascript:publish()" class="fcred">发布</a></li>
 			</ul>
 		</div>
@@ -57,17 +64,17 @@
 	<div class="main macen width pore">
 		<!-- 导航条 start -->
 		<nav class="nav">
-			<ul class="flp">
-				<li class="wai p_child bgred">
-					<a href="#"><span>拍品</span>分类</a>
-				</li>
-				<li class="wai"><a href="index.html"><span id="span">首页</span></a></li>
-				<li class="wai"><a href="auction.html">拍卖</a></li>
-				<li class="wai"><a href="barter.html">易物</a></li>
-				<li class="wai"><a href="stretch.html">活动</a></li>
-				<li class="wai"><a href="download.html">APP下载</a></li>
-			</ul>
-		</nav>
+            <ul class="flp ovhid">
+                <!--<li class="wai">
+                    <a href="#"><span></span>商品分类</a>
+                </li>-->
+                <li class="wai"><a href="index.html">首页</a><i></i></li>
+                <li class="wai"><a href="auction.html">拍卖</a><i></i></li>
+                <li class="wai"><a href="barter.html">易物</a><i></i></li>
+                <li class="wai"><a href="stretch.html">活动</a><i></i></li>
+                <li class="wai bgred" style="float:right;"><a href="download.html">APP下载</a></li>
+            </ul>
+        </nav>
 		<!-- 导航条 end -->
 		<!-- 面包屑导航  start -->
 		<div class="directories">当前目录<span><a href="index.html">首页</a></span><a href="butishop.html">>精品店铺</a></div>
@@ -76,8 +83,7 @@
 		<!-- 商品展示  start -->
 		<div class="width macen">
 			<div class="pstatus">
-				<a href="#"><span class="active">默认</span></a>
-				<a href="#"><span>信用等级</span></a>
+				<a href="#"><span class="active">信用等级</span></a>
 				<a href="#"><span>收藏数</span></a>
 				<a href="#"><span>距离</span></a>
 				<div class="pagediv fr">
@@ -85,177 +91,328 @@
 					<a href="#"><div class="prev"><</div></a><a href="#"><div class="next">></div></a>
 				</div>
 			</div>
-			<div class="borbd ovhid mat20">
+			<div class="boe31 ovhid mat20 pad10 psr0">
+				<div class="butishop-clk0">
+					<span class="fl">已收藏</span>
+					<span class="fr">进入店铺</span>
+				</div>
 				<div class="fr">
-					<div class="textrig">
+					<!--<div class="textrig">
 						<a href="#">进入店铺<span class="arc woicon bgred fcfff mal10">></span></a>
-					</div>
-					<div class="macen wi900 ovhid mat20 mab10 strpho5 mar40">
+					</div>-->
+					<div class="macen ovhid mab10 strpho5" style="width:850px;">
+						<!--<div class="fl disib strpho boe31">
+							<img src="../img/rp3.jpg">
+							<div class="goodname"><a href="#">王小青|烟霞自一川</a></div>
+						</div>-->
 						<div class="fl disib strpho boe31">
 							<img src="../img/rp3.jpg">
-							<div class="goodname"><a href="#">王小青-烟霞自一川</a></div>
-							<p>聚贤阁</p>
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
 						</div>
 						<div class="fl disib strpho boe31">
 							<img src="../img/rp3.jpg">
-							<div class="goodname"><a href="#">王小青-烟霞自一川</a></div>
-							<p>聚贤阁</p>
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
 						</div>
 						<div class="fl disib strpho boe31">
 							<img src="../img/rp3.jpg">
-							<div class="goodname"><a href="#">王小青-烟霞自一川</a></div>
-							<p>聚贤阁</p>
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
 						</div>
 						<div class="fl disib strpho boe31">
 							<img src="../img/rp3.jpg">
-							<div class="goodname"><a href="#">王小青-烟霞自一川</a></div>
-							<p>聚贤阁</p>
-						</div>
-						<div class="fl disib strpho boe31">
-							<img src="../img/rp3.jpg">
-							<div class="goodname"><a href="#">王小青-烟霞自一川</a></div>
-							<p>聚贤阁</p>
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
 						</div>
 					</div>
 				</div>
 				<div class="shopinfo">
-					<div class="fr">
-						<h3>店铺：京德轩</h3>
-						<p>
-							<span class="bgs fcfff woicon">实</span>
-							<span class="bgv fcfff woicon">V</span>
-							<span class="bgb fcfff woicon">保</span>
-							<span class="bgc fcfff woicon">诚</span>
-						</p>
-						<p class="textcen">
-							<span class="wostar fs16">★</span>
-							<span class="wostar fs16">★</span>
-							<span class="wostar fs16">★</span>
-							<span class="wostar fs16">★</span>
-							<span class="wostar fs16">★</span>
-						</p>
-						<div class="radius">已收藏</div>
-					</div>
-					<img src="../img/rp.jpg" class="arc headimg">
+					<div class="ovhid pad10">
+						<img src="../img/rp.jpg" class="arc headimg fl">
+						<div class="fl padl10 mat16">
+							<h2>京德轩</h2>
+							<p>
+								<span class="bgs fcfff woicon">实</span>
+								<span class="bgv fcfff woicon">V</span>
+								<span class="bgb fcfff woicon">保</span>
+								<span class="bgc fcfff woicon">诚</span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+							</p>			
+						</div>						
+					</div>					
 				</div>
 			</div>
-			<div class="borbd ovhid mat20">
+			<div class="boe31 ovhid mat20 pad10 psr0">
+				<div class="butishop-clk0">
+					<span class="fl">已收藏</span>
+					<span class="fr">进入店铺</span>
+				</div>
 				<div class="fr">
-					<div class="textrig">
+					<!--<div class="textrig">
 						<a href="#">进入店铺<span class="arc woicon bgred fcfff mal10">></span></a>
-					</div>
-					<div class="macen wi900 ovhid mat20 mab10 strpho5 mar40">
+					</div>-->
+					<div class="macen ovhid mab10 strpho5" style="width:850px;">
+						<!--<div class="fl disib strpho boe31">
+							<img src="../img/rp3.jpg">
+							<div class="goodname"><a href="#">王小青|烟霞自一川</a></div>
+						</div>-->
 						<div class="fl disib strpho boe31">
 							<img src="../img/rp3.jpg">
-							<div class="goodname"><a href="#">王小青-烟霞自一川</a></div>
-							<p>聚贤阁</p>
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
 						</div>
 						<div class="fl disib strpho boe31">
 							<img src="../img/rp3.jpg">
-							<div class="goodname"><a href="#">王小青-烟霞自一川</a></div>
-							<p>聚贤阁</p>
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
 						</div>
 						<div class="fl disib strpho boe31">
 							<img src="../img/rp3.jpg">
-							<div class="goodname"><a href="#">王小青-烟霞自一川</a></div>
-							<p>聚贤阁</p>
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
 						</div>
 						<div class="fl disib strpho boe31">
 							<img src="../img/rp3.jpg">
-							<div class="goodname"><a href="#">王小青-烟霞自一川</a></div>
-							<p>聚贤阁</p>
-						</div>
-						<div class="fl disib strpho boe31">
-							<img src="../img/rp3.jpg">
-							<div class="goodname"><a href="#">王小青-烟霞自一川</a></div>
-							<p>聚贤阁</p>
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
 						</div>
 					</div>
 				</div>
 				<div class="shopinfo">
-					<div class="fr">
-						<h3>店铺：京德轩</h3>
-						<p>
-							<span class="bgs fcfff woicon">实</span>
-							<span class="bgv fcfff woicon">V</span>
-							<span class="bgb fcfff woicon">保</span>
-							<span class="bgc fcfff woicon">诚</span>
-						</p>
-						<p class="textcen">
-							<span class="wostar fs16">★</span>
-							<span class="wostar fs16">★</span>
-							<span class="wostar fs16">★</span>
-							<span class="wostar fs16">★</span>
-							<span class="wostar fs16">★</span>
-						</p>
-						<div class="radius">已收藏</div>
-					</div>
-					<img src="../img/rp.jpg" class="arc headimg">
+					<div class="ovhid pad10">
+						<img src="../img/rp.jpg" class="arc headimg fl">
+						<div class="fl padl10 mat16">
+							<h2>京德轩</h2>
+							<p>
+								<span class="bgs fcfff woicon">实</span>
+								<span class="bgv fcfff woicon">V</span>
+								<span class="bgb fcfff woicon">保</span>
+								<span class="bgc fcfff woicon">诚</span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+							</p>			
+						</div>						
+					</div>					
 				</div>
 			</div>
-			<div class="borbd ovhid mat20">
+			<div class="boe31 ovhid mat20 pad10 psr0">
+				<div class="butishop-clk0">
+					<span class="fl">已收藏</span>
+					<span class="fr">进入店铺</span>
+				</div>
 				<div class="fr">
-					<div class="textrig">
+					<!--<div class="textrig">
 						<a href="#">进入店铺<span class="arc woicon bgred fcfff mal10">></span></a>
-					</div>
-					<div class="macen wi900 ovhid mat20 mab10 strpho5 mar40">
+					</div>-->
+					<div class="macen ovhid mab10 strpho5" style="width:850px;">
+						<!--<div class="fl disib strpho boe31">
+							<img src="../img/rp3.jpg">
+							<div class="goodname"><a href="#">王小青|烟霞自一川</a></div>
+						</div>-->
 						<div class="fl disib strpho boe31">
 							<img src="../img/rp3.jpg">
-							<div class="goodname"><a href="#">王小青-烟霞自一川</a></div>
-							<p>聚贤阁</p>
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
 						</div>
 						<div class="fl disib strpho boe31">
 							<img src="../img/rp3.jpg">
-							<div class="goodname"><a href="#">王小青-烟霞自一川</a></div>
-							<p>聚贤阁</p>
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
 						</div>
 						<div class="fl disib strpho boe31">
 							<img src="../img/rp3.jpg">
-							<div class="goodname"><a href="#">王小青-烟霞自一川</a></div>
-							<p>聚贤阁</p>
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
 						</div>
 						<div class="fl disib strpho boe31">
 							<img src="../img/rp3.jpg">
-							<div class="goodname"><a href="#">王小青-烟霞自一川</a></div>
-							<p>聚贤阁</p>
-						</div>
-						<div class="fl disib strpho boe31">
-							<img src="../img/rp3.jpg">
-							<div class="goodname"><a href="#">王小青-烟霞自一川</a></div>
-							<p>聚贤阁</p>
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
 						</div>
 					</div>
 				</div>
 				<div class="shopinfo">
-					<div class="fr">
-						<h3>店铺：京德轩</h3>
-						<p>
-							<span class="bgs fcfff woicon">实</span>
-							<span class="bgv fcfff woicon">V</span>
-							<span class="bgb fcfff woicon">保</span>
-							<span class="bgc fcfff woicon">诚</span>
-						</p>
-						<p class="textcen">
-							<span class="wostar fs16">★</span>
-							<span class="wostar fs16">★</span>
-							<span class="wostar fs16">★</span>
-							<span class="wostar fs16">★</span>
-							<span class="wostar fs16">★</span>
-						</p>
-						<div class="radius">已收藏</div>
+					<div class="ovhid pad10">
+						<img src="../img/rp.jpg" class="arc headimg fl">
+						<div class="fl padl10 mat16">
+							<h2>京德轩</h2>
+							<p>
+								<span class="bgs fcfff woicon">实</span>
+								<span class="bgv fcfff woicon">V</span>
+								<span class="bgb fcfff woicon">保</span>
+								<span class="bgc fcfff woicon">诚</span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+							</p>			
+						</div>						
+					</div>					
+				</div>
+			</div>
+			<div class="boe31 ovhid mat20 pad10 psr0">
+				<div class="butishop-clk0">
+					<span class="fl">已收藏</span>
+					<span class="fr">进入店铺</span>
+				</div>
+				<div class="fr">
+					<!--<div class="textrig">
+						<a href="#">进入店铺<span class="arc woicon bgred fcfff mal10">></span></a>
+					</div>-->
+					<div class="macen ovhid mab10 strpho5" style="width:850px;">
+						<!--<div class="fl disib strpho boe31">
+							<img src="../img/rp3.jpg">
+							<div class="goodname"><a href="#">王小青|烟霞自一川</a></div>
+						</div>-->
+						<div class="fl disib strpho boe31">
+							<img src="../img/rp3.jpg">
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
+						</div>
+						<div class="fl disib strpho boe31">
+							<img src="../img/rp3.jpg">
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
+						</div>
+						<div class="fl disib strpho boe31">
+							<img src="../img/rp3.jpg">
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
+						</div>
+						<div class="fl disib strpho boe31">
+							<img src="../img/rp3.jpg">
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
+						</div>
 					</div>
-					<img src="../img/rp.jpg" class="arc headimg">
+				</div>
+				<div class="shopinfo">
+					<div class="ovhid pad10">
+						<img src="../img/rp.jpg" class="arc headimg fl">
+						<div class="fl padl10 mat16">
+							<h2>京德轩</h2>
+							<p>
+								<span class="bgs fcfff woicon">实</span>
+								<span class="bgv fcfff woicon">V</span>
+								<span class="bgb fcfff woicon">保</span>
+								<span class="bgc fcfff woicon">诚</span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+							</p>			
+						</div>						
+					</div>					
+				</div>
+			</div>
+			<div class="boe31 ovhid mat20 pad10 psr0">
+				<div class="butishop-clk0">
+					<span class="fl">已收藏</span>
+					<span class="fr">进入店铺</span>
+				</div>
+				<div class="fr">
+					<!--<div class="textrig">
+						<a href="#">进入店铺<span class="arc woicon bgred fcfff mal10">></span></a>
+					</div>-->
+					<div class="macen ovhid mab10 strpho5" style="width:850px;">
+						<!--<div class="fl disib strpho boe31">
+							<img src="../img/rp3.jpg">
+							<div class="goodname"><a href="#">王小青|烟霞自一川</a></div>
+						</div>-->
+						<div class="fl disib strpho boe31">
+							<img src="../img/rp3.jpg">
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
+						</div>
+						<div class="fl disib strpho boe31">
+							<img src="../img/rp3.jpg">
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
+						</div>
+						<div class="fl disib strpho boe31">
+							<img src="../img/rp3.jpg">
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
+						</div>
+						<div class="fl disib strpho boe31">
+							<img src="../img/rp3.jpg">
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="shopinfo">
+					<div class="ovhid pad10">
+						<img src="../img/rp.jpg" class="arc headimg fl">
+						<div class="fl padl10 mat16">
+							<h2>京德轩</h2>
+							<p>
+								<span class="bgs fcfff woicon">实</span>
+								<span class="bgv fcfff woicon">V</span>
+								<span class="bgb fcfff woicon">保</span>
+								<span class="bgc fcfff woicon">诚</span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+							</p>			
+						</div>						
+					</div>					
+				</div>
+			</div>
+			<div class="boe31 ovhid mat20 pad10 psr0">
+				<div class="butishop-clk0">
+					<span class="fl">已收藏</span>
+					<span class="fr">进入店铺</span>
+				</div>
+				<div class="fr">
+					<!--<div class="textrig">
+						<a href="#">进入店铺<span class="arc woicon bgred fcfff mal10">></span></a>
+					</div>-->
+					<div class="macen ovhid mab10 strpho5" style="width:850px;">
+						<!--<div class="fl disib strpho boe31">
+							<img src="../img/rp3.jpg">
+							<div class="goodname"><a href="#">王小青|烟霞自一川</a></div>
+						</div>-->
+						<div class="fl disib strpho boe31">
+							<img src="../img/rp3.jpg">
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
+						</div>
+						<div class="fl disib strpho boe31">
+							<img src="../img/rp3.jpg">
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
+						</div>
+						<div class="fl disib strpho boe31">
+							<img src="../img/rp3.jpg">
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
+						</div>
+						<div class="fl disib strpho boe31">
+							<img src="../img/rp3.jpg">
+							<div class="goodname"><a href="aucinfo.html">王小青|烟霞自一川</a></div>
+						</div>
+					</div>
+				</div>
+				<div class="shopinfo">
+					<div class="ovhid pad10">
+						<img src="../img/rp.jpg" class="arc headimg fl">
+						<div class="fl padl10 mat16">
+							<h2>京德轩</h2>
+							<p>
+								<span class="bgs fcfff woicon">实</span>
+								<span class="bgv fcfff woicon">V</span>
+								<span class="bgb fcfff woicon">保</span>
+								<span class="bgc fcfff woicon">诚</span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+								<span class="icon5-jx"></span>
+							</p>			
+						</div>						
+					</div>					
 				</div>
 			</div>
 			<!-- 分页  start -->
-			<div id="page" class="textrig mat30 mab30"></div>
+			<div id="page" class="textrig mat20 mab20"></div>
 			<!-- 分页  end -->
+			<a href="aucinfo.html" class="jpg"><img src="../img/jpb.jpg" class="width"></a>
 		</div>
 		<!-- 商品展示  end -->
 	</div>
 	<!-- 页面主体结束 -->
 	<!-- footer start -->
-	<footer>
+<footer>
 		<ul class="width macen flp out">
 			<li class="p_li">
 				<ul class="inner">
@@ -316,7 +473,11 @@
 			<li class="p_li">
 				<ul class="inner">
 					<li><span class="h3">版权信息</span></li>
-					<li class="copyright">淘艺会员所发布展示的“作品”“文章”版权归原作者所有，任何商业用途均须联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。Copyright 2010-2020宁波淘艺文化有限公司宁波十月Inc. 版权所有浙ICP备10206008号增值电信业务经营许可证浙B2-20100409</li>
+					<li class="copyright">
+						<p>淘艺会员所发布展示的“作品”“文章”版权归原作者所有，任何商业用途均须联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。</p>
+						<p>Copyright 2010-2020宁波淘艺文化有限公司宁波十月Inc. 版权所有</p>
+						<p>浙ICP备10206008号增值电信业务经营许可证浙<br>B2-20100409</p>
+					</li>
 				</ul>
 			</li>
 		</ul>

@@ -1,4 +1,4 @@
-.xq_tabs_out{margin:0;padding:0;height:45px;list-style: none;border-bottom: 2px solid #ccc;}
+.xq_tabs_out{margin:0;padding:0;height:45px;list-style: none;border-bottom: 2px solid #eee;}
 .xq_tabs_out li{
 	height:45px;
 	line-height:40px;
@@ -7,9 +7,31 @@
 	text-align: center;
 	cursor: pointer;
 	background: #fff;
-	color: #000;
+	color: #7e7e7e;
 }
-.xq_tabs_out .xq_tabs_activ{border: 2px solid #dbdcde;color: #000;border-bottom:none;}
+.xq_tabs_out .xq_tabs_activ{
+	border: 2px solid #eee;
+	position:relative;
+	border-color:#eee #eee transparent #eee;
+	color: #7e7e7e;
+	border-bottom:none;
+}
+.xq_tabs_activ:before{
+	content:"";
+	position:absolute;
+	height:2px;
+	background:#fff;
+	bottom:0;
+	left:0;
+	right:0;
+}
 .xq_tabs_content{width: 930px;}
-.xq_tabs_content .xq_tabs_area{width: 926px;display: none;float: left;border:2px solid #ccc;border-top: 0px;}
+.xq_tabs_content .xq_tabs_area{
+	width: 930px;display: none;float: left;border:2px solid;
+	border-color:transparent #eee #eee #eee;
+	border-top: 0px;
+	box-sizing:border-box;
+	max-height:795px;
+	overflow-y:auto;
+}
 .xq_tabs_content .xq_tabs_area:first-child{display: block;}

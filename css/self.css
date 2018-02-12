@@ -1,12 +1,12 @@
 .manager{
-	min-height:1000px;
+	min-height:980px;
 	margin: 25px 0px 100px;
 }
 .nav_left{
 	width: 213px;
 	min-height: 980px;
-	padding-top: 20px;
-	border-right: 1px solid #e3e3e3;
+/*	padding-top: 20px;*/
+	/*border-right: 1px solid #e3e3e3;*/
 }
 .nav_left .pnav > li.pore{
 	cursor: pointer;
@@ -18,6 +18,9 @@
 }
 .wi970{
 	width: 970px;
+}
+.navactive .rotate{
+	transform: rotate(270deg);
 }
 .rotate{
     transform: rotate(90deg);
@@ -41,11 +44,15 @@
 	line-height: 16px;
 	margin-top: 13px;
 	border-left: 4px solid #a81527;
+	color:#7e7e7e;
+	font-size:14px;
 }
 a.updbtn{
+	/*margin-left:5px;*/
+	font-size:12px;
 	height: 25px;
 	display: inline-flex;
-    padding: 0px 20px;
+    padding: 0px 12px;
 	line-height: 25px;
 	border:1px solid #e3e3e3;
 	background: url('../img/upd_btn.png') repeat-x;
@@ -61,9 +68,10 @@ button.updbtn{
 	background: #c12736;
 	color: #fff;
 	border: 1px solid #c12736;
+	font-size:18px;
 }
 button.updbtn:hover{
-	color: #c12736;
+	color: #c12736 !important;
 	background: #fff;
 	border: 1px solid #c12736;
 }
@@ -98,29 +106,32 @@ button.updbtn:hover{
 /*barcollet   end*/
 /*bindthird   start*/
 .bindthird li{
-	height: 40px;
-	line-height: 40px;
+	width:85px;
+	height:120px;
+	line-height:30px;
 }
-.bindthird li .arc{
-	height: 40px;
-	width: 40px;
+.bindthird li .macen{
+	height: 85px;
+	width: 85px;
 	background-position: center center;
+	background-size:80px 80px;
+	background-repeat:no-repeat;
 }
 .weibo{
-	background: url('../icon/icon_wb.png') no-repeat #f1f1f1;
+	background-image: url('../img/weibo1.png');
 }
 .weixin{
-	background: url('../icon/icon_wx.png') no-repeat #f1f1f1;
+	background-image: url('../img/weixin1.png');
 }
 .qq{
-	background: url('../icon/icon_qq.png') no-repeat #f1f1f1;
+	background-image: url('../img/qq1.png');
 }
-.bindthird li:nth-child(2){
+/*.bindthird li:nth-child(2){
 	border-top:1px solid #e3e3e3;
 	border-bottom: 1px solid #e3e3e3; 
-}
+}*/
 .bindthird li .bind{
-	width: 135px;
+	width: 85px;
 }
 /*bindthird   end*/
 /*strcollet  start*/
@@ -176,7 +187,7 @@ button.updbtn:hover{
 }
 .ngoodinfo tr{
 	display: block;
-	padding: 20px 0px;
+	padding: 20px 10px;
 	border-bottom: 1px solid #d9dadc;
 }
 .ngoodinfo tr td{
@@ -226,7 +237,8 @@ button.updbtn:hover{
 	width: 650px;
 }
 .setbar tr td:first-child{
-	width: 260px;
+	width:auto;
+	margin-right:20px;
 }
 .setbar tr td input,.setbar tr td select,.setbar tr td textarea{
 	width: 650px;
@@ -240,12 +252,14 @@ button.updbtn:hover{
 	height: 60px;
 }
 .goodres > h3{
+	font-size:12px;
+	font-weight:normal;
 	margin-left: 30px;
 	margin-right: 50px;
 }
 .waitlabel{
 	/*border-bottom: 3px solid #f2f3f3; */
-	padding: 10px 20px 0px;
+	padding: 10px 30px 0px;
 	height: 38px;
 }
 .waitlabel p a{
@@ -300,9 +314,12 @@ li.xq_tabs_activ .laibu{
 	width: 320px;
 }
 .localzc tr td:nth-child(3){
+	color:#7e7e7e;
 	width: 380px;
+	font-size:14px;
 }
 .localzc tr td input{
+	text-align:center;
 	padding: 10px;
 	border:1px solid #e3e3e3;
 	border-top: 2px solid #bbbabf;
@@ -327,6 +344,7 @@ table tr td select{
 /*localzc   end*/
 /*Recharge   start*/
 input.price{
+	text-align:center;
 	border: 1px solid #e3e3e3;
 	border-top: 2px solid #bbbabf;
 	padding: 5px;
@@ -372,13 +390,43 @@ input.input{
 }
 /*recharge  end*/
 /*billlist  start*/
+.billlist{
+	padding:0 15px;
+	overflow:hidden;
+}
+.billlist tr td{
+	font-size:14px;
+}
+/*.billlist tr td:first-child{
+	text-align:left;
+}*/
+.billlist tr td:last-child{
+	/*text-align:right;*/
+	width:250px;
+}
+.billlist tr td:nth-child(4){
+	font-size:16px;
+}
+/*.billlist tr td:nth-child(2),.billlist tr td:nth-child(3){
+	font-size:12px;
+	color:#707070;
+}*/
 .billlist tr:first-child{
 	background: #f4f5f9;
-	border: 0px;
 }
 .billlist tr{
-	border: 1px solid #e3e3e3;
+	border-bottom:1px solid #e3e3e3;
 	border-top: 0px;
+}
+.billlist tr:last-child{
+	border-bottom:0;
+}
+
+.billlist1{
+	border:1px solid #e3e3e3;
+}
+.billlist1 tr td{
+	text-align:center !important;
 }
 /*billlist  end*/
 /*info  order and bar    start*/

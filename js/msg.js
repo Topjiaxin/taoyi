@@ -2,7 +2,8 @@ var index;
 function publish () {
 	index=layer.open({
 		type:1,
-		title:['发布','background:#fff;border-bottom:0px;text-align:center;'],
+		skin:'demo-class',
+		title:['发布','background:#C22737;border-bottom:0px;text-align:center;color:#fff;font-size:16px;'],
 		area:["480px","210px"],
 		content:'<div class="publish textcen"><div class="imgbag fl"><div class="arc macen imgbg"><div id="localimg"></div></div><p>本地相册</p><p>选择商品照片</p></div><div class="imgbag fl"><div class="arc macen imgbg"><div id="goodm"></div></div><p>商品管理</p><p>待上传商品</p></div><div class="imgbag fl"><div class="arc macen imgbg"><div id="mobm"></div></div><p>从模板创建</p></div><div class="imgbag fl"><div class="arc macen imgbg"><div id="gfpz"></div></div><p>官方专场</p><p>拍品征集</p></div></div>'
 	});

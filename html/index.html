@@ -10,30 +10,48 @@
 	<link rel="stylesheet" type="text/css" href="../css/header.css">
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
 	<link rel="stylesheet" type="text/css" href="../css/base.css">
+	<link rel="stylesheet" type="text/css" href="../css/info.css">
+	<link rel="stylesheet" type="text/css" href="../css/jx.css">
+	<link rel="stylesheet" type="text/css" href="../fontawesome-4.2.0_ie7/4.2.0/css/font-awesome.min.css">
 	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript" src="../js/jx.js"></script>
 	<style type="text/css">
-	
+	    #slide .KMSPrefix_slide_button li{
+	    	float:right !important;
+	    }
+	    #slide .KMSPrefix_slide_button{
+	    	right:220px !important;
+	    }
+	    .nav .flp .wai:last-child{
+			width:203px !important;
+		}
+		.godbag a{
+			border-bottom:0;
+		}
+		.wostar{
+			line-height:40px;
+		}
 	</style>
-	<title>淘艺网</title>
+	<title>首页</title>
 </head>
 <body>
 	<!-- 头部start -->
-	<header>
+	<!--<header>
 		<div class="width macen title">
 			<span class="fl">淘艺</span>
 			<span class="fr mar40">
-				静雅轩<a href="login.html" class="fcred">[退出]</a>
+				静雅轩<a href="#" class="fcred">[退出]</a>
 			</span>
 		</div>
-	</header>
+	</header>-->
 	<!-- 头部end -->
 	<!-- 搜索 start -->
-	<div class="width macen topsearch">
-		<a href="index.html"><div class="logo fl"></div></a>
-		<div class="search mat30">
+	<div class="width topsearch">
+		<a href="index.html"><div class="logo"></div></a>
+		<div class="search">
 			<ul class="flp fs14 fcred">
 				<li class="pa510 active">拍品</li>
-				<li class="pa510">易物商品</li>
+				<li class="pa510">易物</li>
 				<li class="pa510">专场</li>
 				<li class="pa510">作者</li>
 				<li class="pa510">活动</li>
@@ -44,10 +62,10 @@
 		</div>
 		<div class="play fr">
 			<ul class="frp">
-				<li><a href="self.html" class="fcred">我的淘艺<span class="disib"></span></a></li>
+				<li><a href="#" class="fcred">静雅轩<span class="disib"></span></a></li>
 				<li><a href="inform.html" class="fcred">消息</a></li>
-				<li><a href="strcollet.html" class="fcred">收藏夹</a></li>
-				<li><a href="javascript:publish()" class="fcred">发布</a></li>
+				<li><a href="waitup.html" class="fcred">收藏夹</a></li>
+				<li><a href="javascript:publish()" class="fcred clk-box">发布</a></li>
 			</ul>
 		</div>
 	</div>
@@ -57,13 +75,13 @@
 		<!-- 导航条 start -->
 		<nav class="nav">
 			<ul class="flp">
-				<li class="wai p_child bgred">
-					<a href="#"><span>拍品/易物</span>商品分类</a>
+				<li class="wai p_child">
+					<a href="#"><span>艺术品分类</span></a>
 				</li>
-				<li class="wai"><a href="index.html"><span id="span">首页</span></a></li>
-				<li class="wai"><a href="auction.html">拍卖</a></li>
-				<li class="wai"><a href="barter.html">易物</a></li>
-				<li class="wai"><a href="stretch.html">活动</a></li>
+				<li class="wai bgyellow"><a href="index.html"><span id="span">首页</span></a><i style="visibility: hidden;"></i></li>
+				<li class="wai"><a href="auction.html">拍卖</a><i></i></li>
+				<li class="wai"><a href="barter.html">易物</a><i></i></li>
+				<li class="wai"><a href="stretch.html">活动</a><i></i></li>
 				<li class="wai"><a href="download.html">APP下载</a></li>
 			</ul>
 		</nav>
@@ -73,30 +91,32 @@
 			<!-- 轮播图 start -->
 			<div id="slide">
 			    <div>
-			         <a href="#" target="_blank"><img src="../img/top.jpg"/></a>
+			         <a href="http://www.baidu.com" target="_blank"><img src="../img/top.jpg"/></a>
 			    </div>
 			    <div>
-			         <a href="#" target="_blank"><img src="../img/top2.jpg"/></a>
+			         <a href="http://www.baidu.com" target="_blank"><img src="../img/top2.jpg"/></a>
 			    </div>
 			    <div>
-			        <a href="#" target="_blank"><img src="../img/top3.jpg"/></a>
+			        <a href="http://www.baidu.com" target="_blank"><img src="../img/top3.jpg"/></a>
 			    </div>
 			    <div>
-			        <a href="#" target="_blank"><img src="../img/top4.png"/></a>
+			        <a href="http://www.baidu.com" target="_blank"><img src="../img/top4.png"/></a>
 			    </div>
 			</div>
 			<!-- 轮播图end -->
 			<div class="advan">
-				<a href="#"><div class="topr1"></div></a>
+				<a href="todayauc.html"><div class="topr1">
+					<span>方寸之美——橄榄核雕</span>
+				</div></a>
 				<div class="toprt">
 					<div class="h3">淘艺通知</div>
 					<ul>
 						<li><a href="inform.html">您有收到新的易物申请！</a></li>
-						<li><a href="inform.html">关于假冒客服诈骗的声明</a></li>
+						<li class="hot-jx"><a href="inform.html">关于假冒客服诈骗的声明</a></li>
 						<li><a href="inform.html">淘艺APP升级通知</a></li>
 					</ul>
 				</div>
-				<a href="aucinfo.html">
+				<a href="todayauc.html">
 					<div class="topr2">
 						<div class="text">
 							<p>榕新斋旧藏专场</p>
@@ -122,212 +142,257 @@
 		<!-- 商品展示  start -->
 		<div class="width macen goods">
 			<div class="good good1">
-				<div class="label">
-					<span class="title">最新展览</span>
-					<a href="barter.html" class="posir">更多<i>></i></a>
-				</div>
-				<div class="goodbag ">
-					<div  class="fr goodfr">
-						<div class="gftext bgred">
+				<div class="fl">
+					<div class="label label1">
+						<span class="title til" name="1">在线展厅<i></i></span>
+						<span class="title til" name="2">最新资讯<i class="hid0"></i></span>
+						<span class="title til rig" name="3">活动交流<i class="hid0"></i></span>						
+						<a href="auction.html" class="posir">更多<i>></i></a>
+					</div>
+					<div class="goodbag goodbag1 index-a">
+						<div  class="goodfl goodff ovhid online-jx item1" forname="1">
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx.jpg"></a>
+								<div class="goodname bom0"><a href="#">ADA画廊 | 建筑与音乐展</a></div>							
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx2.jpg"></a>
+								<div class="goodname bom0"><a href="#">太璞如琢-崔如琢艺术故…</a></div>							
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx3.jpg"></a>
+								<div class="goodname bom0"><a href="#">太璞如琢-崔如琢艺术故…</a></div>							
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx4.jpg"></a>
+								<div class="goodname bom0"><a href="#">ADA画廊 | 建筑与音乐展</a></div>							
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx.jpg"></a>
+								<div class="goodname bom0"><a href="#">ADA画廊 | 建筑与音乐展</a></div>							
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx2.jpg"></a>
+								<div class="goodname bom0"><a href="#">太璞如琢-崔如琢艺术故…</a></div>							
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx3.jpg"></a>
+								<div class="goodname bom0"><a href="#">太璞如琢-崔如琢艺术故…</a></div>							
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx4.jpg"></a>
+								<div class="goodname bom0"><a href="#">ADA画廊 | 建筑与音乐展</a></div>							
+							</div>
+						</div>
+						<div  class="goodfl goodff ovhid new-jx hid0 item1" forname="2">
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx.jpg"></a>
+								<div class="goodname bom0"><a href="#">ADA画廊 | 建筑与音乐展 </a></div>
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx.jpg"></a>
+								<div class="goodname bom0"><a href="#">ADA画廊 | 建筑与音乐展 </a></div>
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx.jpg"></a>
+								<div class="goodname bom0"><a href="#">ADA画廊 | 建筑与音乐展 </a></div>
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx.jpg"></a>
+								<div class="goodname bom0"><a href="#">ADA画廊 | 建筑与音乐展 </a></div>
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx.jpg"></a>
+								<div class="goodname bom0"><a href="#">ADA画廊 | 建筑与音乐展 </a></div>
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx.jpg"></a>
+								<div class="goodname bom0"><a href="#">ADA画廊 | 建筑与音乐展 </a></div>
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx.jpg"></a>
+								<div class="goodname bom0"><a href="#">ADA画廊 | 建筑与音乐展 </a></div>
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx4.jpg"></a>
+								<div class="goodname bom0"><a href="#">ADA画廊 | 建筑与音乐展</a> </div>
+							</div>
+						</div>
+						<div  class="goodfl goodff ovhid active-jx hid0 item1"  forname="3">
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx2.jpg"></a>
+								<div class="goodname bom0"><a href="#">太璞如琢-崔如琢艺术故…</a></div>							
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx2.jpg"></a>
+								<div class="goodname bom0"><a href="#">太璞如琢-崔如琢艺术故…</a></div>							
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx3.jpg"></a>
+								<div class="goodname bom0"><a href="#">太璞如琢-崔如琢艺术故…</a></div>							
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx2.jpg"></a>
+								<div class="goodname bom0"><a href="#">太璞如琢-崔如琢艺术故…</a></div>							
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx2.jpg"></a>
+								<div class="goodname bom0"><a href="#">太璞如琢-崔如琢艺术故…</a></div>							
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx2.jpg"></a>
+								<div class="goodname bom0"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx3.jpg"></a>
+								<div class="goodname bom0"><a href="#">太璞如琢-崔如琢艺术故…</a></div>							
+							</div>
+							<div class="fl godbag">
+								<a href="aucinfo.html"><img src="../img/zx2.jpg"></a>
+								<div class="goodname bom0"><a href="#">太璞如琢-崔如琢艺术故…</a></div>							
+							</div>
+						</div>
+					</div>
+			    </div>
+			    <div class="fr">
+			    	<div class="good good3 noborder">
+						<div class="label">
+							<span class="title title1">艺术热点</span>
+							<a href="artical.html" class="posir posir1">更多<i>></i></a>
+						</div>
+						<div class="author">
 							<ul>
-								<li><a href="inform.html">太璞如琢崔如琢艺术展</a></li>
-								<li><a href="inform.html">2016APDF*C首届亚太设计创意节</a></li>
-								<li><a href="inform.html">井观摄影展No.04 漫步关西の微…</a></li>
-								<li><a href="inform.html">勒梅特夫妇的国际影像收藏展</a></li>
-								<li><a href="inform.html">故宫博物院牡丹题材文物特展</a></li>
+								<li>
+									<a href="#"><img src="../img/author1.png"></a>
+									<div class="top_author">
+										<a href="aucinfo.html">
+											<p>版画艺术家</p>
+											<p>董建生作品展</p>
+										</a>
+										<p>河北画院专职画家，国家一级美术师。系中国美术…</p>
+									</div>
+								</li>
+								<li><a href="atical.html">书法艺术家 刘东明</a></li>
+								<li><a href="atical.html">工笔国画艺术家 卢津意</a></li>
+								<li><a href="atical.html">山水国画艺术家 王小清</a></li>
+								<li><a href="atical.html">国画艺术家 康福昌</a></li>
+								<li><a href="atical.html">国画艺术家 丘霖</a></li>
+								<li><a href="atical.html">篆刻艺术家 贺少安</a></li>
+								<li><a href="atical.html">书法艺术家 崔国安</a></li>
+								<li><a href="atical.html">青年艺术家 王晶晶</a></li>
+								<li><a href="atical.html">查看更多</a></li>
+								<li><a href="atical.html">书法艺术家 崔国安</a></li>
+								<li><a href="atical.html">青年艺术家 王晶晶</a></li>
+								<li><a href="atical.html">查看更多</a></li>
 							</ul>
 						</div>
-						<div class="gfimg">
-							<a href="barinfo.html"><img src="../img/zxr.jpg"></a>
-						</div>
 					</div>
-					<div  class="goodfl ovhid">
-						<div class="fl godbag">
-							<a href="barinfo.html"><img src="../img/zx.jpg"></a>
-							<div class="goodname"><a href="barinfo.html">ADA画廊 | 建筑与音乐展</a></div>
-							<div class="collect textrig">
-								<span class="fcred clled icon">123</span>人收藏
-							</div>
-						</div>
-						<div class="fl godbag">
-							<a href="barinfo.html"><img src="../img/zx2.jpg"></a>
-							<div class="goodname"><a href="barinfo.html">太璞如琢-崔如琢艺术故…</a></div>
-							<div class="collect textrig">
-								<span class="fcred clled icon">123</span>人收藏
-							</div>
-						</div>
-						<div class="fl godbag">
-							<a href="barinfo.html"><img src="../img/zx3.jpg"></a>
-							<div class="goodname"><a href="barinfo.html">太璞如琢-崔如琢艺术故…</a></div>
-							<div class="collect textrig">
-								<span class="fcred clled icon">123</span>人收藏
-							</div>
-						</div>
-						<div class="fl godbag">
-							<a href="barinfo.html"><img src="../img/zx4.jpg"></a>
-							<div class="goodname"><a href="barinfo.html">ADA画廊 | 建筑与音乐展</a></div>
-							<div class="collect textrig">
-								<span class="fcred clled icon">123</span>人收藏
-							</div>
-						</div>
-					</div>
-				</div>
+			    </div>
 			</div>
-			<div class="good good1">
-				<div class="label">
-					<span class="title">最新资讯</span>
-					<a href="barinfo.html" class="posir">更多<i>></i></a>
-				</div>
-				<div class="goodbag ">
-					<div  class="fr goodfr">
-						<div class="gftext bgyellow">
-							<ul>
-								<li><a href="barinfo.html">太璞如琢崔如琢艺术展</a></li>
-								<li><a href="barinfo.html">2016APDF*C首届亚太设计创意节</a></li>
-								<li><a href="barinfo.html">井观摄影展No.04 漫步关西の微…</a></li>
-								<li><a href="barinfo.html">勒梅特夫妇的国际影像收藏展</a></li>
-								<li><a href="barinfo.html">故宫博物院牡丹题材文物特展</a></li>
-							</ul>
-						</div>
-						<div class="gfimg">
-							<a href="barinfo.html"><img src="../img/zxr.jpg"></a>
-						</div>
-					</div>
-					<div  class="goodfl ovhid">
-						<div class="fl godbag">
-							<a href="barinfo.html"><img src="../img/zx.jpg"></a>
-							<div class="goodname"><a href="#">ADA画廊 | 建筑与音乐展 </a></div>
-							<div class="collect textrig">
-								<span class="fcred clled icon">123</span>人收藏
-							</div>
-						</div>
-						<div class="fl godbag">
-							<a href="barinfo.html"><img src="../img/zx2.jpg"></a>
-							<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-							<div class="collect textrig">
-								<span class="fcred clled icon">123</span>人收藏
-							</div>
-						</div>
-						<div class="fl godbag">
-							<a href="barinfo.html"><img src="../img/zx3.jpg"></a>
-							<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-							<div class="collect textrig">
-								<span class="fcred clled icon">123</span>人收藏
-							</div>
-						</div>
-						<div class="fl godbag">
-							<a href="barinfo.html"><img src="../img/zx4.jpg"></a>
-							<div class="goodname"><a href="#">ADA画廊 | 建筑与音乐展</a> </div>
-							<div class="collect textrig">
-								<span class="fcred clled icon">123</span>人收藏
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+			
 			<div class="good good2">
 				<div class="label">
-					<span class="title">精品专场</span>
-					<a href="todayauc.html" class="posir">更多<i>></i></a>
+					<span class="title title1">精品拍卖专场</span>
+					<a href="todayauc.html" class="posir posir1">更多<i>></i></a>
 				</div>
 				<div class="goodbag">
 					<div class="goodft ovhid">
-						<div class="fl godbag">
-							<a href="individual-session.html"><img src="../img/jp1.jpg"></a>
-							<div class="goodname"><a href="individual-session.html">ADA画廊 | 建筑与音乐展 </a></div>
-							<div class="collect textrig">
-								<span class="fcred saled icon">20</span>件拍品
-								<span class="fcred clled icon">123</span>人收藏
-								<span class="fcred joined icon">123</span>人参拍
-								<span class="fcred bided icon">123</span>次出价
+						<div class="fl godbag godbag1">
+							<a href="aucinfo.html"><img src="../img/jp1.jpg"></a>
+							<div class="goodname"><a href="aucinfo.html">ADA画廊 | 建筑与音乐展 </a></div>
+							<div class="collect">
+								<span class="fcred">20</span>件拍品
+								<i></i>
+								<span class="fcred">123</span>人收藏
+								<i></i>
+								<span class="fcred">123</span>人参拍
+								<i></i>
+								<span class="fcred">123</span>次出价
 							</div>
+							<p>距结束：<span>00</span>天&nbsp;<span>08</span>时&nbsp;<span>01</span>分&nbsp;<span>56</span>秒</p>
 						</div>
-						<div class="fl godbag">
-							<a href="individual-session.html"><img src="../img/jp2.jpg"></a>
-							<div class="goodname"><a href="individual-session.html">太璞如琢-崔如琢艺术故…</a></div>
+						<div class="fl godbag godbag1">
+							<a href="aucinfo.html"><img src="../img/rp7.jpg"></a>
+							<div class="goodname"><a href="aucinfo.html">太璞如琢-崔如琢艺术故太璞如琢-崔如琢艺术故</a></div>
 							<div class="collect textrig">
-								<span class="fcred saled icon">20</span>件拍品
-								<span class="fcred clled icon">123</span>人收藏
-								<span class="fcred joined icon">123</span>人参拍
-								<span class="fcred bided icon">123</span>次出价
+								<span class="fcred">20</span>件拍品
+								<i></i>
+								<span class="fcred">123</span>人收藏
+								<i></i>
+								<span class="fcred">123</span>人参拍
+								<i></i>
+								<span class="fcred">123</span>次出价
 							</div>
+							<p>距结束：<span>00</span>天&nbsp;<span>08</span>时&nbsp;<span>01</span>分&nbsp;<span>56</span>秒</p>
 						</div>
-						<div class="fl godbag">
-							<a href="individual-session.html"><img src="../img/jp3.jpg"></a>
-							<div class="goodname"><a href="individual-session.html">太璞如琢-崔如琢艺术故…</a></div>
+						<div class="fl godbag godbag1">
+							<a href="aucinfo.html"><img src="../img/jp3.jpg"></a>
+							<div class="goodname"><a href="aucinfo.html">太璞如琢-崔如琢艺术故太璞如琢-崔如琢艺术故</a></div>
 							<div class="collect textrig">
-								<span class="fcred saled icon">20</span>件拍品
-								<span class="fcred clled icon">123</span>人收藏
-								<span class="fcred joined icon">123</span>人参拍
-								<span class="fcred bided icon">123</span>次出价
+								<span class="fcred">20</span>件拍品
+								<i></i>
+								<span class="fcred">123</span>人收藏
+								<i></i>
+								<span class="fcred">123</span>人参拍
+								<i></i>
+								<span class="fcred">123</span>次出价
 							</div>
+							<p>距结束：<span>00</span>天&nbsp;<span>08</span>时&nbsp;<span>01</span>分&nbsp;<span>56</span>秒</p>
 						</div>
 					</div>
 				</div>
 			</div>
-			<a href="#"><img src="../img/jpb.jpg" class="ma10-0 width"></a>
+			<a href="aucinfo.html" class="jpg"><img src="../img/jpb.jpg" class="ma10-0 width"></a>
 			<div class="fr">
-				<div class="good good3 noborder">
-					<div class="label">
-						<span class="title">展览热榜</span>
-						<a href="" class="posir">更多热榜<i>></i></a>
-					</div>
-					<div class="author">
-						<ul>
-							<li>
-								<span class="fcred">01</span>
-								<a href="#"><img src="../img/author1.png"></a>
-								<div class="top_author">
-									<a href="#">版画艺术家董建生</a>
-									<p>河北画院专职画家，国家一级美术师。系中国美术…</p>
-								</div>
-							</li>
-							<li><span>02</span><a href="#">书法艺术家 刘东明</a></li>
-							<li><span>03</span><a href="#">工笔国画艺术家 卢津意</a></li>
-							<li><span>04</span><a href="#">山水国画艺术家 王小清</a></li>
-							<li><span>05</span><a href="#">国画艺术家 康福昌</a></li>
-							<li><span>06</span><a href="#">国画艺术家 丘霖</a></li>
-							<li><span>07</span><a href="#">篆刻艺术家 贺少安</a></li>
-							<li><span>08</span><a href="#">书法艺术家 崔国安</a></li>
-							<li><span>09</span><a href="#">青年艺术家 王晶晶</a></li>
-							<li><span>></span><a href="#">查看更多</a></li>
-						</ul>
-					</div>
-				</div>
 				<div class="good good3">
 					<div class="label">
-						<span class="title">最新出价</span>
-						<a href="auction.html" class="posir">更多<i>></i></a>
+						<span class="title title1">最新出价</span>
 					</div>
 					<div class="activity">
 						<ul>
 							<li>
 								<p><a href="aucinfo.html">20世纪 法国捷信老式三脚架</a></p>
-								<span class="fcred">¥600元</span>
+								<span class="fcred">¥&nbsp;600元</span>
 							</li>
 							<li>
 								<p><a href="aucinfo.html">清光绪 粉彩花鸟纹盘</a></p>
-								<span class="fcred">¥600元</span>
+								<span class="fcred">¥&nbsp;600元</span>
 							</li>
 							<li>
 								<p><a href="aucinfo.html">民国 粉彩“朱茂记造”弥勒摆件</a></p>
-								<span class="fcred">¥600元</span>
+								<span class="fcred">¥&nbsp;600元</span>
 							</li>
 							<li>
 								<p><a href="aucinfo.html">现代 金丝楠木龙胆水波金丝首饰盒</a></p>
-								<span class="fcred">¥600元</span>
+								<span class="fcred">¥&nbsp;600元</span>
 							</li>
 							<li>
 								<p><a href="aucinfo.html">唐伟民 清风</a></p>
-								<span class="fcred">¥600元</span>
+								<span class="fcred">¥&nbsp;600元</span>
 							</li>
 							<li>
 								<p><a href="aucinfo.html">田永庆 行书七言联</a></p>
-								<span class="fcred">¥600元</span>
+								<span class="fcred">¥&nbsp;600元</span>
 							</li>
 							<li>
 								<p><a href="aucinfo.html">孙克维 功臣回首</a></p>
-								<span class="fcred">¥600元</span>
+								<span class="fcred">¥&nbsp;600元</span>
+							</li>
+							<li>
+								<p><a href="aucinfo.html">20世纪 法国捷信老式三脚架</a></p>
+								<span class="fcred">¥&nbsp;600元</span>
+							</li>
+							<li>
+								<p><a href="aucinfo.html">清光绪 粉彩花鸟纹盘</a></p>
+								<span class="fcred">¥&nbsp;600元</span>
+							</li>
+							<li>
+								<p><a href="aucinfo.html">民国 粉彩“朱茂记造”弥勒摆件</a></p>
+								<span class="fcred">¥&nbsp;600元</span>
+							</li>
+							<li>
+								<p><a href="aucinfo.html">现代 金丝楠木龙胆水波金丝首饰盒</a></p>
+								<span class="fcred">¥&nbsp;600元</span>
 							</li>
 						</ul>
 					</div>
@@ -335,155 +400,236 @@
 			</div>
 			<div class="good good4">
 				<div class="label">
-					<span class="title">热门拍品</span>
-					<a href="auction" class="posir">更多<i>></i></a>
+					<span class="title title1">热门拍品</span>
+					<a href="todayauc.html" class="posir posir1">更多<i>></i></a>
 				</div>
 				<div class="goodbag">
 					<div class="goodfl ovhid">
-						<div class="fl godbag">
+						<div class="fl godbag godbag1 hotbag">
 							<a href="aucinfo.html"><img src="../img/rp.jpg"></a>
-							<div class="goodname"><a href="#">ADA画廊 | 建筑与音乐展 </a></div>
-							<div class="collect textlef">
-								当前价：<span class="fcred">2000元</span>
+							<div class="goodname"><a href="aucinfo.html">王小清 | 烟霞自一川 </a></div>
+							<div class="collect">
+								<div>当前价：<b class="fcred">2000元</b></div>
+								<div><span class="fcred">1245</span>次出价</div>
 							</div>
+							<p>距结束：<span>00</span>天&nbsp;<span>08</span>时&nbsp;<span>01</span>分&nbsp;<span>56</span>秒</p>
 						</div>
-						<div class="fl godbag">
+						<div class="fl godbag godbag1 hotbag">
 							<a href="aucinfo.html"><img src="../img/rp2.jpg"></a>
-							<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-							<div class="collect textlef">
-								当前价：<span class="fcred">2000元</span>
+							<div class="goodname"><a href="aucinfo.html">王小清 | 烟霞自一川 </a></div>
+							<div class="collect">
+								<div>当前价：<b class="fcred">2000元</b></div>
+								<div><span class="fcred">1245</span>次出价</div>
 							</div>
+							<p>距结束：<span>00</span>天&nbsp;<span>08</span>时&nbsp;<span>01</span>分&nbsp;<span>56</span>秒</p>
 						</div>
-						<div class="fl godbag">
+						<div class="fl godbag godbag1 hotbag">
 							<a href="aucinfo.html"><img src="../img/rp3.jpg"></a>
-							<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-							<div class="collect textlef">
-								当前价：<span class="fcred">2000元</span>
+							<div class="goodname"><a href="aucinfo.html">王小清 | 烟霞自一川 </a></div>
+							<div class="collect">
+								<div>当前价：<b class="fcred">2000元</b></div>
+								<div><span class="fcred">1245</span>次出价</div>
 							</div>
+							<p>距结束：<span>00</span>天&nbsp;<span>08</span>时&nbsp;<span>01</span>分&nbsp;<span>56</span>秒</p>
 						</div>
-						<div class="fl godbag">
+						<div class="fl godbag godbag1 hotbag">
 							<a href="aucinfo.html"><img src="../img/rp4.jpg"></a>
-							<div class="goodname"><a href="#">ADA画廊 | 建筑与音乐展 </a></div>
-							<div class="collect textlef">
-								当前价：<span class="fcred">2000元</span>
+							<div class="goodname"><a href="aucinfo.html">王小清 | 烟霞自一川 </a></div>
+							<div class="collect">
+								<div>当前价：<b class="fcred">2000元</b></div>
+								<div><span class="fcred">1245</span>次出价</div>
 							</div>
-						</div>
-						<div class="fl godbag">
-							<a href="aucinfo.html"><img src="../img/rp5.jpg"></a>
-							<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-							<div class="collect textlef">
-								当前价：<span class="fcred">2000元</span>
-							</div>
-						</div>
-						<div class="fl godbag">
-							<a href="aucinfo.html"><img src="../img/rp6.jpg"></a>
-							<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-							<div class="collect textlef">
-								当前价：<span class="fcred">2000元</span>
-							</div>
-						</div>
-						<div class="fl godbag">
-							<a href="aucinfo.html"><img src="../img/rp7.jpg"></a>
-							<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-							<div class="collect textlef">
-								当前价：<span class="fcred">2000元</span>
-							</div>
-						</div>
-						<div class="fl godbag">
-							<a href="aucinfo.html"><img src="../img/rp8.jpg"></a>
-							<div class="goodname"><a href="#">太璞如琢-崔如琢艺术故…</a></div>
-							<div class="collect textlef">
-								当前价：<span class="fcred">2000元</span>
-							</div>
-						</div>
+							<p>距结束：<span>00</span>天&nbsp;<span>08</span>时&nbsp;<span>01</span>分&nbsp;<span>56</span>秒</p>
+						</div>						
 					</div>
 				</div>
 			</div>
 
 			<div class="good good4">
 				<div class="label">
-					<span class="title">易物商品</span>
-					<a href="#" class="posir">更多<i>></i></a>
+					<span class="title title1">易物精品</span>
+					<a href="bartergoods.html" class="posir posir1">更多<i>></i></a>
 				</div>
 				<div class="goodbag">
 					<div  class="goodfl ovhid">
-						<div class="fl godbag">
-							<a href="barinfo.html"><img src="../img/bp1.jpg"></a>
-							<div class="goodname"><a href="barinfo.html">太璞如琢-崔如琢艺术故…</a></div>
-							<div class="collect textlef"><a href="#">琚瑶阁</a></div>
+						<div class="fl godbag godbag1 hotbag">
+							<a href="aucinfo.html"><img src="../img/bp1.jpg"></a>
+							<div class="goodname"><a href="aucinfo.html">王小清 | 烟霞自一川</a></div>
+							<p class="collect textlef">
+								<a href="butishop.html">琚瑶阁</a>
+								<span class="iconn icon1-jx"></span>
+								<span class="iconn icon2-jx"></span>
+								<span class="iconn icon3-jx"></span>
+								<span class="iconn icon4-jx"></span>
+								<span class="textcen fl ovhid">
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+								</span>
+							</p>
 						</div>
-						<div class="fl godbag">
-							<a href="barinfo.html"><img src="../img/bp2.jpg"></a>
-							<div class="goodname"><a href="barinfo.html">太璞如琢-崔如琢艺术故…</a></div>
-							<div class="collect textlef"><a href="#">琚瑶阁</a></div>
+						<div class="fl godbag godbag1 hotbag">
+							<a href="aucinfo.html"><img src="../img/bp20.jpg"></a>
+							<div class="goodname"><a href="#">王小清 | 烟霞自一川</a></div>
+							<p class="collect textlef">
+								<a href="butishop.html">琚瑶阁</a>
+								<span class="iconn icon1-jx"></span>
+								<span class="iconn icon2-jx"></span>
+								<span class="iconn icon3-jx"></span>
+								<span class="iconn icon4-jx"></span>
+								<span class="textcen fl ovhid">
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+								</span>
+							</p>
 						</div>
-						<div class="fl godbag">
-							<a href="barinfo.html"><img src="../img/bp3.jpg"></a>
-							<div class="goodname"><a href="barinfo.html">太璞如琢-崔如琢艺术故…</a></div>
-							<div class="collect textlef"><a href="#">琚瑶阁</a></div>
+						<div class="fl godbag godbag1 hotbag">
+							<a href="aucinfo.html"><img src="../img/bp30.jpg"></a>
+							<div class="goodname"><a href="#">王小清 | 烟霞自一川</a></div>
+							<p class="collect textlef">
+								<a href="butishop.html">琚瑶阁</a>
+								<span class="iconn icon1-jx"></span>
+								<span class="iconn icon2-jx"></span>
+								<span class="iconn icon3-jx"></span>
+								<span class="iconn icon4-jx"></span>
+								<span class="textcen fl ovhid">
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+								</span>
+							</p>
 						</div>
-						<div class="fl godbag">
-							<a href="barinfo.html"><img src="../img/bp4.jpg"></a>
-							<div class="goodname"><a href="barinfo.html">太璞如琢-崔如琢艺术故…</a></div>
-							<div class="collect textlef"><a href="#">琚瑶阁</a></div>
+						<div class="fl godbag godbag1 hotbag">
+							<a href="aucinfo.html"><img src="../img/bp4.jpg"></a>
+							<div class="goodname"><a href="#">王小清 | 烟霞自一川</a></div>
+							<p class="collect textlef">
+								<a href="butishop.html">琚瑶阁</a>
+								<span class="iconn icon1-jx"></span>
+								<span class="iconn icon2-jx"></span>
+								<span class="iconn icon3-jx"></span>
+								<span class="iconn icon4-jx"></span>
+								<span class="textcen fl ovhid">
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+									<span class="wostar fs12 fl">★</span>
+								</span>
+							</p>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="good good6">
 				<div class="label">
-					<span class="title">精品店铺</span>
-					<a href="butishop.html" class="posir">更多<i>></i></a>
+					<span class="title title1">推荐店铺</span>
+					<a href="butishop.html" class="posir posir1">更多<i>></i></a>
 				</div>
 				<div class="goodbag ovhid">
 					<div class="goodft">
 						<div class="fl godbag">
 							<div class="collect textrig">
-								<div class="fl"><a href="#">雅趣斋</a></div>
-								<div class="fr"><span class="fcred clled icon">123</span>人收藏</div>
+								<div>
+									<a href="butishop.html" class="fl">雅趣斋</a>
+									<span class="iconn icon1-jx"></span>
+									<span class="iconn icon2-jx"></span>
+									<span class="iconn icon3-jx"></span>
+									<span class="iconn icon4-jx"></span>
+									<span class="textcen fl ovhid">
+										<span class="wostar fs12 fl">★</span>
+										<span class="wostar fs12 fl">★</span>
+										<span class="wostar fs12 fl">★</span>
+										<span class="wostar fs12 fl">★</span>
+										<span class="wostar fs12 fl">★</span>
+									</span>
+								</div>								
 							</div>
 							<div class="blimg">
-								<a href="barinfo.html"><img src="../img/jdpl1.jpg"></a>
-								<a href="barinfo.html"><img src="../img/jdpl2.jpg"></a>
+								<a href="aucdoinfo.html" class="store"><img src="../img/jdpl10.jpg"></a>
+								<a href="aucinfo.html" class="store"><img src="../img/jdpl20.jpg"></a>
 							</div>
-							<a href="barinfo.html"><img src="../img/jdpr.jpg" class="mal1"></a>
+							<a href="aucinfo.html" class="store1"><img src="../img/jdpr0.jpg" class="mal1"></a>
 						</div>
 						<div class="fl godbag">
 							<div class="collect textrig">
-								<div class="fl"><a href="#">雅趣斋</a></div>
-								<div class="fr"><span class="fcred clled icon">123</span>人收藏</div>
+								<div>
+									<a href="butishop.html" class="fl">雅趣斋</a>
+									<span class="iconn icon1-jx"></span>
+									<span class="iconn icon2-jx"></span>
+									<span class="iconn icon3-jx"></span>
+									<span class="iconn icon4-jx"></span>
+									<span class="textcen fl ovhid">
+										<span class="wostar fs12 fl">★</span>
+										<span class="wostar fs12 fl">★</span>
+										<span class="wostar fs12 fl">★</span>
+										<span class="wostar fs12 fl">★</span>
+										<span class="wostar fs12 fl">★</span>
+									</span>
+								</div>
 							</div>
 							<div class="blimg">
-								<a href="barinfo.html"><img src="../img/jdpl1.jpg"></a>
-								<a href="barinfo.html"><img src="../img/jdpl2.jpg"></a>
+								<a href="aucinfo.html" class="store"><img src="../img/jdpl10.jpg"></a>
+								<a href="aucinfo.html" class="store"><img src="../img/jdpl20.jpg"></a>
 							</div>
-							<a href="barinfo.html"><img src="../img/jdpr.jpg" class="mal1"></a>
+							<a href="aucinfo.html" class="store1"><img src="../img/jdpr0.jpg" class="mal1"></a>
 						</div>
 						<div class="fl godbag">
 							<div class="collect textrig">
-								<div class="fl"><a href="#">雅趣斋</a></div>
-								<div class="fr"><span class="fcred clled icon">123</span>人收藏</div>
+								<div>
+									<a href="butishop.html" class="fl">雅趣斋</a>
+									<span class="iconn icon1-jx"></span>
+									<span class="iconn icon2-jx"></span>
+									<span class="iconn icon3-jx"></span>
+									<span class="iconn icon4-jx"></span>
+									<span class="textcen fl ovhid">
+										<span class="wostar fs12 fl">★</span>
+										<span class="wostar fs12 fl">★</span>
+										<span class="wostar fs12 fl">★</span>
+										<span class="wostar fs12 fl">★</span>
+										<span class="wostar fs12 fl">★</span>
+									</span>
+								</div>
 							</div>
 							<div class="blimg">
-								<a href="barinfo.html"><img src="../img/jdpl1.jpg"></a>
-								<a href="barinfo.html"><img src="../img/jdpl2.jpg"></a>
+								<a href="aucinfo.html" class="store"><img src="../img/jdpl10.jpg"></a>
+								<a href="aucinfo.html" class="store"><img src="../img/jdpl20.jpg"></a>
 							</div>
-							<a href="barinfo.html"><img src="../img/jdpr.jpg" class="mal1"></a>
+							<a href="aucinfo.html" class="store1"><img src="../img/jdpr0.jpg" class="mal1"></a>
 						</div>
 						<div class="fl godbag">
 							<div class="collect textrig">
-								<div class="fl"><a href="#">雅趣斋</a></div>
-								<div class="fr"><span class="fcred clled icon">123</span>人收藏</div>
+								<div>
+									<a href="butishop.html" class="fl">雅趣斋</a>
+									<span class="iconn icon1-jx"></span>
+									<span class="iconn icon2-jx"></span>
+									<span class="iconn icon3-jx"></span>
+									<span class="iconn icon4-jx"></span>
+									<span class="textcen fl ovhid">
+										<span class="wostar fs12 fl">★</span>
+										<span class="wostar fs12 fl">★</span>
+										<span class="wostar fs12 fl">★</span>
+										<span class="wostar fs12 fl">★</span>
+										<span class="wostar fs12 fl">★</span>
+									</span>
+								</div>
 							</div>
 							<div class="blimg">
-								<a href="barinfo.html"><img src="../img/jdpl1.jpg"></a>
-								<a href="barinfo.html"><img src="../img/jdpl2.jpg"></a>
+								<a href="aucinfo.html" class="store"><img src="../img/jdpl10.jpg"></a>
+								<a href="aucinfo.html" class="store"><img src="../img/jdpl20.jpg"></a>
 							</div>
-							<a href="barinfo.html"><img src="../img/jdpr.jpg" class="mal1"></a>
+							<a href="aucinfo.html" class="store1"><img src="../img/jdpr0.jpg" class="mal1"></a>
 						</div>
 					</div>
 				</div>
 			</div>
+			<a href="aucinfo.html" class="jpg"><img src="../img/jpb.jpg" class="ma10-0 width"></a>
 		</div>
 		<!-- 商品展示  end -->
 	</div>
@@ -494,7 +640,7 @@
 			<li class="p_li">
 				<ul class="inner">
 					<li><span class="h3">关于</span></li>
-					<li><a href="#">关于淘艺</a></li>
+					<li><a href="about.html">关于淘艺</a></li>
 					<li><a href="#">版权声明</a></li>
 					<li><a href="#">关于隐私</a></li>
 					<li><a href="#">免责声明</a></li>
@@ -550,11 +696,48 @@
 			<li class="p_li">
 				<ul class="inner">
 					<li><span class="h3">版权信息</span></li>
-					<li class="copyright">淘艺会员所发布展示的“作品”“文章”版权归原作者所有，任何商业用途均须联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。Copyright 2010-2020宁波淘艺文化有限公司宁波十月Inc. 版权所有浙ICP备10206008号增值电信业务经营许可证浙B2-20100409</li>
+					<li class="copyright">
+						<p>淘艺会员所发布展示的“作品”“文章”版权归原作者所有，任何商业用途均须联系作者。如未经授权用作他处，作者将保留追究侵权者法律责任的权利。</p>
+						<p>Copyright 2010-2020宁波淘艺文化有限公司宁波十月Inc. 版权所有</p>
+						<p>浙ICP备10206008号增值电信业务经营许可证浙<br>B2-20100409</p>
+					</li>
 				</ul>
 			</li>
 		</ul>
 	</footer>
+<!--弹框start-->
+    <!--<div class="index-box">
+    	<div class="index-box-head">
+    		发布
+    		<i class="index-close"></i>
+    	</div>
+    	<div class="index-box-body">
+    		<div>
+    			<img src="../icon/localimg.png"/>
+    			<p>本地图片</p>
+    			<p>选择商品照片</p>
+    		</div>
+    		<div>
+    			<img src="../icon/goodm.png"/>
+    			<p>商品管理</p>
+    			<p>待上传商品</p>
+    		</div>
+    		<div>
+    			<img src="../icon/mobm.png"/>
+    			<p>从模板创建</p>
+    		</div>
+    		<div>
+    			<img src="../icon/gfpz.png"/>
+    			<p>官方专场</p>
+    			<p>拍品征集</p>
+    		</div>
+    	</div>
+    </div>-->
+    
+<!--弹框start-->
+<!--弹窗背景start-->
+	<!--<div class="bg-cover bg-cover-index"></div>-->
+<!--弹窗背景end-->
 	<!-- footer end  -->
 	<script type="text/javascript" src="../js/slide.js"></script>
 	<script type="text/javascript" src="../js/layer/layer.js"></script>
